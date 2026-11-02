@@ -1,0 +1,2014 @@
+{
+ "election": {
+  "id": "2000",
+  "name": "VIP Test Election",
+  "electionDay": "2031-12-06",
+  "ocdDivisionId": "ocd-division/country:us"
+ },
+ "normalizedInput": {
+  "line1": "340 Main Street",
+  "addressLine": [
+   "340 Main Street"
+  ],
+  "city": "Venice",
+  "state": "CA",
+  "zip": "90291"
+ },
+ "pollingLocations": [
+  {
+   "address": {
+    "locationName": "WESTMINSTER AVENUE ELEMENTARY SCHOOL",
+    "line1": "1010 ABBOT KINNEY BLVD",
+    "city": "VENICE",
+    "state": "CA",
+    "zip": "90291"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 33.9919351,
+   "longitude": -118.4722031,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "WASHINGTON PRESCHOOL",
+    "line1": "2802 4TH ST",
+    "city": "SANTA MONICA",
+    "state": "CA",
+    "zip": "90405"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0017641,
+   "longitude": -118.4798389,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "OAKWOOD RECREATION CENTER",
+    "line1": "767 CALIFORNIA AVE",
+    "city": "VENICE",
+    "state": "CA",
+    "zip": "90291"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 33.9946847,
+   "longitude": -118.4637584,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "JOSLYN PARK",
+    "line1": "633 KENSINGTON RD",
+    "city": "SANTA MONICA",
+    "state": "CA",
+    "zip": "90405"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0081447,
+   "longitude": -118.4815829,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "MARINE PARK",
+    "line1": "1406 MARINE ST",
+    "city": "SANTA MONICA",
+    "state": "CA",
+    "zip": "90405"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0062178,
+   "longitude": -118.4650653,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "CIVIC CENTER PARKING STRUCTURE",
+    "line1": "330 OLYMPIC DR",
+    "city": "SANTA MONICA",
+    "state": "CA",
+    "zip": "90401"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0117059,
+   "longitude": -118.4901846,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "SANTA MONICA COLLEGE",
+    "line1": "1900 PICO BLVD",
+    "city": "SANTA MONICA",
+    "state": "CA",
+    "zip": "90405"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0183926,
+   "longitude": -118.4702491,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "LINCOLN MIDDLE SCHOOL",
+    "line1": "1501 CALIFORNIA AVE",
+    "city": "SANTA MONICA",
+    "state": "CA",
+    "zip": "90403"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0289296,
+   "longitude": -118.4903302,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "BURTON CHACE PARK",
+    "line1": "13650 MINDANAO WAY",
+    "city": "MARINA DEL REY",
+    "state": "CA",
+    "zip": "90292"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 33.9774741,
+   "longitude": -118.4447905,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "GRAND VIEW BOULEVARD ELEMENTARY SCHOOL",
+    "line1": "3951 GRAND VIEW BLVD",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90066"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0023415,
+   "longitude": -118.4296611,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "BRENTWOOD SCIENCE MAGNET SCHOOL",
+    "line1": "740 S GRETNA GREEN WAY",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90049"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.050283,
+   "longitude": -118.4742573,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "MAR VISTA GARDENS RECREATION CENTER",
+    "line1": "4909 MARIONWOOD DR",
+    "city": "CULVER CITY",
+    "state": "CA",
+    "zip": "90230"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 33.9933504,
+   "longitude": -118.4102014,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "MAR VISTA RECREATION CENTER",
+    "line1": "11430 WOODBINE ST",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90066"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0175914,
+   "longitude": -118.4283584,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "DANIEL WEBSTER MIDDLE SCHOOL",
+    "line1": "11330 GRAHAM PL",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90064"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0300239,
+   "longitude": -118.4348925,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "CHARNOCK ROAD ELEMENTARY SCHOOL",
+    "line1": "11133 CHARNOCK RD",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90034"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0177163,
+   "longitude": -118.4197331,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "FELICIA MAHOOD MULTIPURPOSE CENTER",
+    "line1": "11338 SANTA MONICA BLVD",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90025"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0457623,
+   "longitude": -118.4496915,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "RUSTIC CANYON RECREATION CENTER",
+    "line1": "601 LATIMER RD",
+    "city": "SANTA MONICA",
+    "state": "CA",
+    "zip": "90402"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0380341,
+   "longitude": -118.5144259,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "LOYOLA MARYMOUNT UNIVERSITY",
+    "line1": "1 LOYOLA MARYMOUNT UNIVERSITY DR",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90045"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 33.966854,
+   "longitude": -118.42251,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "PAUL REVERE MIDDLE SCHOOL",
+    "line1": "1450 ALLENFORD AVE",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90049"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.055862,
+   "longitude": -118.4949048,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "ROTARY PLAZA",
+    "line1": "5100 OVERLAND AVE",
+    "city": "CULVER CITY",
+    "state": "CA",
+    "zip": "90230"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0061273,
+   "longitude": -118.3943374,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "BIOSCIENCELA",
+    "line1": "4130 OVERLAND AVE",
+    "city": "CULVER CITY",
+    "state": "CA",
+    "zip": "90230"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0132552,
+   "longitude": -118.4014771,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "WEST LOS ANGELES COLLEGE",
+    "line1": "9000 OVERLAND AVE",
+    "city": "CULVER CITY",
+    "state": "CA",
+    "zip": "90230"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0044376,
+   "longitude": -118.3876651,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "COWAN AVENUE ELEMENTARY SCHOOL",
+    "line1": "7615 COWAN AVE",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90045"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 33.9726543,
+   "longitude": -118.4054288,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "COURTYARD BY MARRIOTT LA WEST SIDE",
+    "line1": "6333 BRISTOL PKWY",
+    "city": "CULVER CITY",
+    "state": "CA",
+    "zip": "90230"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 33.9818658,
+   "longitude": -118.3922536,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "PALMS RECREATION CENTER",
+    "line1": "2950 OVERLAND AVE",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90064"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0330626,
+   "longitude": -118.4175731,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "IMAN CULTURAL CENTER",
+    "line1": "3376 MOTOR AVE",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90034"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0282807,
+   "longitude": -118.40951,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "PALISADES BRANCH LIBRARY",
+    "line1": "861 ALMA REAL DR",
+    "city": "PACIFIC PALISADES",
+    "state": "CA",
+    "zip": "90272"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0439976,
+   "longitude": -118.5251262,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "CRESTWOOD HILLS RECREATION CENTER",
+    "line1": "1000 HANLEY AVE",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90049"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0767916,
+   "longitude": -118.4888466,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "HAMMER MUSEUM",
+    "line1": "10899 WILSHIRE BLVD",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90024"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0594059,
+   "longitude": -118.4435848,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "EMERSON MIDDLE SCHOOL",
+    "line1": "1650 SELBY AVE",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90024"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0539879,
+   "longitude": -118.4361764,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "CULVER CITY CITY HALL",
+    "line1": "9770 CULVER BLVD",
+    "city": "CULVER CITY",
+    "state": "CA",
+    "zip": "90232"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0215692,
+   "longitude": -118.395456,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "WESTCHESTER FAMILY YMCA ANNEX",
+    "line1": "8020 ALVERSTONE AVE",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90045"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 33.966435,
+   "longitude": -118.3977806,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "TOM BRADLEY INTERNATIONAL HALL",
+    "line1": "417 CHARLES E YOUNG DR",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90095"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0696351,
+   "longitude": -118.4491115,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "PACIFIC PALISADES PRESBYTERIAN CHURCH",
+    "line1": "15821 W SUNSET BLVD",
+    "city": "PACIFIC PALISADES",
+    "state": "CA",
+    "zip": "90272"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0490108,
+   "longitude": -118.5326455,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "UCLA ACKERMAN UNION",
+    "line1": "308 WESTWOOD PLZ",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90095"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0703779,
+   "longitude": -118.4442056,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "LA TIJERA K-8 ACADEMY OF EXCELLENCE",
+    "line1": "1415 N LA TIJERA BLVD",
+    "city": "INGLEWOOD",
+    "state": "CA",
+    "zip": "90302"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 33.9811576,
+   "longitude": -118.3692348,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "LADERA PARK",
+    "line1": "6027 LADERA PARK AVE",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90056"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 33.9861422,
+   "longitude": -118.3597089,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "WESTFIELD CENTURY CITY",
+    "line1": "10250 SANTA MONICA BLVD",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90067"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 34.0590031,
+   "longitude": -118.418866,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "DOCKWEILER YOUTH CENTER",
+    "line1": "12505 VISTA DEL MAR",
+    "city": "PLAYA DEL REY",
+    "state": "CA",
+    "zip": "90293"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 33.9224286,
+   "longitude": -118.4319057,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "54TH STREET ELEMENTARY SCHOOL",
+    "line1": "5501 EILEEN AVE",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90043"
+   },
+   "pollingHours": "Tue, Mar 5: 7 am - 8 pm",
+   "latitude": 33.9919926,
+   "longitude": -118.3433417,
+   "startDate": "2024-03-05",
+   "endDate": "2024-03-05",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  }
+ ],
+ "earlyVoteSites": [
+  {
+   "address": {
+    "locationName": "PIO PICO MIDDLE SCHOOL",
+    "line1": "1512 ARLINGTON AVE",
+    "city": "LOS ANGELES",
+    "state": "CA",
+    "zip": "90019"
+   },
+   "latitude": 34.0469528,
+   "longitude": -118.316492,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "POP UP VOTE CENTER 5",
+    "line1": "12400 IMPERIAL HWY",
+    "city": "NORWALK",
+    "state": "CA",
+    "zip": "90650"
+   },
+   "latitude": 33.915989,
+   "longitude": -118.0677283,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "MOBILE VOTE CENTER 4",
+    "line1": "12400 IMPERIAL HWY",
+    "city": "NORWALK",
+    "state": "CA",
+    "zip": "90650"
+   },
+   "latitude": 33.915989,
+   "longitude": -118.0677283,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "MOBILE VOTE CENTER 5",
+    "line1": "12400 IMPERIAL HWY",
+    "city": "NORWALK",
+    "state": "CA",
+    "zip": "90650"
+   },
+   "latitude": 33.915989,
+   "longitude": -118.0677283,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "FLEX VOTE CENTER 8",
+    "line1": "12400 IMPERIAL HWY",
+    "city": "NORWALK",
+    "state": "CA",
+    "zip": "90650"
+   },
+   "latitude": 33.915989,
+   "longitude": -118.0677283,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "FLEX VOTE CENTER 10",
+    "line1": "12400 IMPERIAL HWY",
+    "city": "NORWALK",
+    "state": "CA",
+    "zip": "90650"
+   },
+   "latitude": 33.915989,
+   "longitude": -118.0677283,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "FLEX VOTE CENTER 6",
+    "line1": "12400 IMPERIAL HWY",
+    "city": "NORWALK",
+    "state": "CA",
+    "zip": "90650"
+   },
+   "latitude": 33.915989,
+   "longitude": -118.0677283,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "FLEX VOTE CENTER 7",
+    "line1": "12400 IMPERIAL HWY",
+    "city": "NORWALK",
+    "state": "CA",
+    "zip": "90650"
+   },
+   "latitude": 33.915989,
+   "longitude": -118.0677283,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "MOBILE VOTE CENTER 3",
+    "line1": "12400 IMPERIAL HWY",
+    "city": "NORWALK",
+    "state": "CA",
+    "zip": "90650"
+   },
+   "latitude": 33.915989,
+   "longitude": -118.0677283,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "FLEX VOTE CENTER 9",
+    "line1": "12400 IMPERIAL HWY",
+    "city": "NORWALK",
+    "state": "CA",
+    "zip": "90650"
+   },
+   "latitude": 33.915989,
+   "longitude": -118.0677283,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  }
+ ],
+ "dropOffLocations": [
+  {
+   "address": {
+    "locationName": "POP UP VOTE CENTER 5",
+    "line1": "12400 IMPERIAL HWY",
+    "city": "NORWALK",
+    "state": "CA",
+    "zip": "90650"
+   },
+   "latitude": 33.915989,
+   "longitude": -118.0677283,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "MOBILE VOTE CENTER 4",
+    "line1": "12400 IMPERIAL HWY",
+    "city": "NORWALK",
+    "state": "CA",
+    "zip": "90650"
+   },
+   "latitude": 33.915989,
+   "longitude": -118.0677283,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "MOBILE VOTE CENTER 5",
+    "line1": "12400 IMPERIAL HWY",
+    "city": "NORWALK",
+    "state": "CA",
+    "zip": "90650"
+   },
+   "latitude": 33.915989,
+   "longitude": -118.0677283,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "FLEX VOTE CENTER 8",
+    "line1": "12400 IMPERIAL HWY",
+    "city": "NORWALK",
+    "state": "CA",
+    "zip": "90650"
+   },
+   "latitude": 33.915989,
+   "longitude": -118.0677283,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "FLEX VOTE CENTER 10",
+    "line1": "12400 IMPERIAL HWY",
+    "city": "NORWALK",
+    "state": "CA",
+    "zip": "90650"
+   },
+   "latitude": 33.915989,
+   "longitude": -118.0677283,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "FLEX VOTE CENTER 6",
+    "line1": "12400 IMPERIAL HWY",
+    "city": "NORWALK",
+    "state": "CA",
+    "zip": "90650"
+   },
+   "latitude": 33.915989,
+   "longitude": -118.0677283,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "FLEX VOTE CENTER 7",
+    "line1": "12400 IMPERIAL HWY",
+    "city": "NORWALK",
+    "state": "CA",
+    "zip": "90650"
+   },
+   "latitude": 33.915989,
+   "longitude": -118.0677283,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "MOBILE VOTE CENTER 3",
+    "line1": "12400 IMPERIAL HWY",
+    "city": "NORWALK",
+    "state": "CA",
+    "zip": "90650"
+   },
+   "latitude": 33.915989,
+   "longitude": -118.0677283,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "FLEX VOTE CENTER 9",
+    "line1": "12400 IMPERIAL HWY",
+    "city": "NORWALK",
+    "state": "CA",
+    "zip": "90650"
+   },
+   "latitude": 33.915989,
+   "longitude": -118.0677283,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  }
+ ],
+ "contests": [
+  {
+   "type": "General",
+   "ballotTitle": "MEMBER OF THE STATE ASSEMBLY, 61st District",
+   "district": {
+    "name": "61ST STATE ASSEMBLY",
+    "scope": "stateLower"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "86",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "ALFONSO HERNANDEZ",
+     "party": "Party Preference: Republican"
+    },
+    {
+     "name": "TINA SIMONE MCKINNOR",
+     "party": "Party Preference: Democratic"
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "UNITED STATES REPRESENTATIVE, 36th District",
+   "district": {
+    "name": "36TH US CONGRESSIONAL",
+    "scope": "congressional"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "103",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "ARIANA HAKAMI",
+     "party": "Party Preference: Republican"
+    },
+    {
+     "name": "CLAIRE RAGGE ANDERSON",
+     "party": "Party Preference: None"
+    },
+    {
+     "name": "MELISSA TOOMIM",
+     "party": "Party Preference: Republican"
+    },
+    {
+     "name": "TED W. LIEU",
+     "party": "Party Preference: Democratic"
+    }
+   ]
+  },
+  {
+   "type": "ballot-measure",
+   "ballotTitle": "LOS ANGELES CITY MUNICIPAL ELECTION - MEASURE HLA",
+   "district": {
+    "name": "CITY OF LOS ANGELES",
+    "scope": "citywide"
+   },
+   "ballotPlacement": "116",
+   "referendumTitle": "LOS ANGELES CITY MUNICIPAL ELECTION - MEASURE HLA",
+   "referendumText": "CITY MOBILITY PLAN STREET IMPROVEMENT MEASURES. INITIATIVE ORDINANCE HLA. Shall an ordinance providing that when the City of Los Angeles makes a qualifying improvement to a City-owned street (e.g., a paving project), the City must also install certain street enhancements described in the City's Mobility Plan network of pedestrian, bicycle, transit, and vehicle routes; and requiring the City to provide publicly accessible information regarding street improvements; be adopted? Supporters: Sierra Club; LA County Labor Fed; LA County Business Fed; Move LA; Streets For All; SEIU Local 721; UNITE HERE 11; TreePeople Opponents: John Russo; Jay Beeber; Peggy Huang; Lauren Matthews",
+   "referendumPassageThreshold": "MAJORITY OF VOTES CAST",
+   "referendumBallotResponses": [
+    "YES",
+    "NO"
+   ],
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "DISTRICT ATTORNEY",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "129",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "GEORGE GASC\u00d3N"
+    },
+    {
+     "name": "JONATHAN HATAMI"
+    },
+    {
+     "name": "NATHAN HOCHMAN"
+    },
+    {
+     "name": "DEBRA ARCHULETA"
+    },
+    {
+     "name": "JEFF CHEMERINSKY"
+    },
+    {
+     "name": "ERIC SIDDALL"
+    },
+    {
+     "name": "MARIA RAMIREZ"
+    },
+    {
+     "name": "DAN KAPELOVITZ"
+    },
+    {
+     "name": "LLOYD \"BOBCAT\" MASSON"
+    },
+    {
+     "name": "JOHN MCKINNEY"
+    },
+    {
+     "name": "CRAIG J. MITCHELL"
+    },
+    {
+     "name": "DAVID S. MILTON"
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "JUDGE OF THE SUPERIOR COURT Office No. 12",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "130",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "RHONDA A. HAYMON"
+    },
+    {
+     "name": "LYNN DIANE OLSON"
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "JUDGE OF THE SUPERIOR COURT Office No. 39",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "131",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "GEORGE A. TURNER JR."
+    },
+    {
+     "name": "JACOB LEE"
+    },
+    {
+     "name": "STEVE NAPOLITANO"
+    },
+    {
+     "name": "RONDA DIXON"
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "JUDGE OF THE SUPERIOR COURT Office No. 48",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "132",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "MALIK C. BURROUGHS"
+    },
+    {
+     "name": "ERICKA J. WILEY"
+    },
+    {
+     "name": "RENEE ROSE"
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "JUDGE OF THE SUPERIOR COURT Office No. 93",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "133",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "VICTOR AVILA"
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "JUDGE OF THE SUPERIOR COURT Office No. 97",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "134",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "LA SHAE HENDERSON"
+    },
+    {
+     "name": "SAM ABOURCHED"
+    },
+    {
+     "name": "SHARON RANSOM"
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "JUDGE OF THE SUPERIOR COURT Office No. 115",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "135",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "CHRISTMAS BROOKENS"
+    },
+    {
+     "name": "KEITH KOYANO"
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "JUDGE OF THE SUPERIOR COURT Office No. 124",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "136",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "EMILY THERESA SPEAR"
+    },
+    {
+     "name": "KIMBERLY REPECKA"
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "JUDGE OF THE SUPERIOR COURT Office No. 130",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "137",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "LESLIE GUTIERREZ"
+    },
+    {
+     "name": "OSMAN M. TAHER"
+    },
+    {
+     "name": "CHRISTOPHER A. DARDEN"
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "JUDGE OF THE SUPERIOR COURT Office No. 135",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "138",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "GEORGIA HUERTA"
+    },
+    {
+     "name": "MOHAMMAD ALI FAKHREDDINE"
+    },
+    {
+     "name": "STEVEN YEE MAC"
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "JUDGE OF THE SUPERIOR COURT Office No. 137",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "139",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "LUZ E. HERRERA"
+    },
+    {
+     "name": "DIANA RUTH JAMES"
+    },
+    {
+     "name": "TRACEY M. BLOUNT"
+    },
+    {
+     "name": "MICHAEL BERG"
+    }
+   ]
+  },
+  {
+   "type": "ballot-measure",
+   "ballotTitle": "STATE MEASURE 1",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "ballotPlacement": "167",
+   "referendumTitle": "STATE MEASURE 1",
+   "referendumText": "AUTHORIZES $6.38 BILLION IN BONDS TO BUILD MENTAL HEALTH TREATMENT FACILITIES FOR THOSE WITH MENTAL HEALTH AND SUBSTANCE USE CHALLENGES; PROVIDES HOUSING FOR THE HOMELESS. LEGISLATIVE STATUTE. Amends Mental Health Services Act to provide additional behavioral health services. Fiscal Impact: Shift roughly $140 million annually of existing tax revenue for mental health, drug, and alcohol treatment from counties to the state. Increased state bond repayment costs of $310 million annually for 30 years. Supporters: California Professional Firefighters; CA Assoc. of Veteran Service Agencies; National Alliance on Mental Illness - CA Opponents: Mental Health America of California; Howard Jarvis Taxpayers Association; CalVoices",
+   "referendumPassageThreshold": "MAJORITY OF VOTES CAST",
+   "referendumBallotResponses": [
+    "YES",
+    "NO"
+   ],
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "PRESIDENTIAL PREFERENCE",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "168",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "STEPHEN P LYONS",
+     "party": "Democratic"
+    },
+    {
+     "name": "EBAN CAMBRIDGE",
+     "party": "Democratic"
+    },
+    {
+     "name": "GABRIEL CORNEJO",
+     "party": "Democratic"
+    },
+    {
+     "name": "PRESIDENT R BODDIE",
+     "party": "Democratic"
+    },
+    {
+     "name": "JOSEPH R BIDEN JR",
+     "party": "Democratic"
+    },
+    {
+     "name": "MARIANNE WILLIAMSON",
+     "party": "Democratic"
+    },
+    {
+     "name": "DEAN PHILLIPS",
+     "party": "Democratic"
+    },
+    {
+     "name": "ARMANDO \"MANDO\" PEREZ-SERRATO",
+     "party": "Democratic"
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "PRESIDENTIAL PREFERENCE",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "169",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "NIKKI HALEY",
+     "party": "Republican"
+    },
+    {
+     "name": "ASA HUTCHINSON",
+     "party": "Republican"
+    },
+    {
+     "name": "DONALD J. TRUMP",
+     "party": "Republican"
+    },
+    {
+     "name": "CHRIS CHRISTIE",
+     "party": "Republican"
+    },
+    {
+     "name": "RYAN L BINKLEY",
+     "party": "Republican"
+    },
+    {
+     "name": "DAVID STUCKENBERG",
+     "party": "Republican"
+    },
+    {
+     "name": "RACHEL SWIFT",
+     "party": "Republican"
+    },
+    {
+     "name": "RON DESANTIS",
+     "party": "Republican"
+    },
+    {
+     "name": "VIVEK RAMASWAMY",
+     "party": "Republican"
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "PRESIDENTIAL PREFERENCE",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "170",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "JAMES BRADLEY",
+     "party": "American Independent"
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "PRESIDENTIAL CANDIDATE PREFERENCE (Delegates to the national convention will be selected after the presidential preference primary election.)",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "171",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "JILL STEIN",
+     "party": "Green"
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "PRESIDENTIAL PREFERENCE",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "172",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "CHARLES BALLAY",
+     "party": "Libertarian"
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "PRESIDENTIAL PREFERENCE",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "173",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "CORNEL WEST",
+     "party": "Peace and Freedom"
+    },
+    {
+     "name": "JASMINE SHERMAN",
+     "party": "Peace and Freedom"
+    },
+    {
+     "name": "CLAUDIA DE LA CRUZ",
+     "party": "Peace and Freedom"
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "UNITED STATES SENATOR - Full Term",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "174",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "STEVE GARVEY",
+     "party": "Party Preference: Republican"
+    },
+    {
+     "name": "DENICE GARY-PANDOL",
+     "party": "Party Preference: Republican"
+    },
+    {
+     "name": "LAURA GARZA",
+     "party": "Party Preference: None"
+    },
+    {
+     "name": "SEPI GILANI",
+     "party": "Party Preference: Democratic"
+    },
+    {
+     "name": "DON J. GRUNDMANN",
+     "party": "Party Preference: None"
+    },
+    {
+     "name": "FORREST JONES",
+     "party": "Party Preference: American Independent"
+    },
+    {
+     "name": "BARBARA LEE",
+     "party": "Party Preference: Democratic"
+    },
+    {
+     "name": "GAIL LIGHTFOOT",
+     "party": "Party Preference: Libertarian"
+    },
+    {
+     "name": "SARAH SUN LIEW",
+     "party": "Party Preference: Republican"
+    },
+    {
+     "name": "SHARLETA BASSETT",
+     "party": "Party Preference: Republican"
+    },
+    {
+     "name": "JAMES BRADLEY",
+     "party": "Party Preference: Republican"
+    },
+    {
+     "name": "MARTIN VEPRAUSKAS",
+     "party": "Party Preference: Republican"
+    },
+    {
+     "name": "ERIC EARLY",
+     "party": "Party Preference: Republican"
+    },
+    {
+     "name": "ADAM B. SCHIFF",
+     "party": "Party Preference: Democratic"
+    },
+    {
+     "name": "MAJOR SINGH",
+     "party": "Party Preference: None"
+    },
+    {
+     "name": "STEFAN SIMCHOWITZ",
+     "party": "Party Preference: Republican"
+    },
+    {
+     "name": "CHRISTINA PASCUCCI",
+     "party": "Party Preference: Democratic"
+    },
+    {
+     "name": "DAVID PETERSON",
+     "party": "Party Preference: Democratic"
+    },
+    {
+     "name": "PERRY POUND",
+     "party": "Party Preference: Democratic"
+    },
+    {
+     "name": "KATIE PORTER",
+     "party": "Party Preference: Democratic"
+    },
+    {
+     "name": "DOUGLAS H. PIERCE",
+     "party": "Party Preference: Democratic"
+    },
+    {
+     "name": "RAJI RAB",
+     "party": "Party Preference: Democratic"
+    },
+    {
+     "name": "MARK RUZON",
+     "party": "Party Preference: None"
+    },
+    {
+     "name": "JONATHAN REISS",
+     "party": "Party Preference: Republican"
+    },
+    {
+     "name": "JOHN ROSE",
+     "party": "Party Preference: Democratic"
+    },
+    {
+     "name": "HARMESH KUMAR",
+     "party": "Party Preference: Democratic"
+    },
+    {
+     "name": "JAMES \"JIM\" MACAULEY",
+     "party": "Party Preference: Republican"
+    }
+   ]
+  },
+  {
+   "type": "General",
+   "ballotTitle": "UNITED STATES SENATOR - Short Term (Unexpired term ending January 3, 2025)",
+   "district": {
+    "name": "LOS ANGELES COUNTY",
+    "scope": "countywide"
+   },
+   "numberElected": "1",
+   "numberVotingFor": "1",
+   "ballotPlacement": "175",
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ],
+   "candidates": [
+    {
+     "name": "STEVE GARVEY",
+     "party": "Party Preference: Republican"
+    },
+    {
+     "name": "SEPI GILANI",
+     "party": "Party Preference: Democratic"
+    },
+    {
+     "name": "BARBARA LEE",
+     "party": "Party Preference: Democratic"
+    },
+    {
+     "name": "ERIC EARLY",
+     "party": "Party Preference: Republican"
+    },
+    {
+     "name": "ADAM B. SCHIFF",
+     "party": "Party Preference: Democratic"
+    },
+    {
+     "name": "CHRISTINA PASCUCCI",
+     "party": "Party Preference: Democratic"
+    },
+    {
+     "name": "KATIE PORTER",
+     "party": "Party Preference: Democratic"
+    }
+   ]
+  }
+ ],
+ "state": [
+  {
+   "name": "California",
+   "electionAdministrationBody": {
+    "name": "Secretary of State",
+    "electionInfoUrl": "https://www.sos.ca.gov/elections/",
+    "electionRegistrationUrl": "https://registertovote.ca.gov/?t=s",
+    "electionRegistrationConfirmationUrl": "https://voterstatus.sos.ca.gov",
+    "votingLocationFinderUrl": "https://www.sos.ca.gov/elections/polling-place",
+    "ballotInfoUrl": "https://voterstatus.sos.ca.gov/",
+    "electionRulesUrl": "https://www.sos.ca.gov/elections/voter-registration/vote-mail",
+    "correspondenceAddress": {
+     "line1": "1500 11th Street, 5th Floor",
+     "addressLine": [
+      "1500 11th Street, 5th Floor"
+     ],
+     "city": "Sacramento",
+     "state": "",
+     "zip": "95814"
+    }
+   },
+   "local_jurisdiction": {
+    "name": "Los Angeles",
+    "electionAdministrationBody": {
+     "name": "Registrar-Recorder/County Clerk",
+     "electionInfoUrl": "http://www.lavote.gov/",
+     "electionRegistrationUrl": "http://registertovote.ca.gov/",
+     "electionRegistrationConfirmationUrl": "https://lavote.gov/vrstatus/",
+     "absenteeVotingInfoUrl": "http://lavote.gov/home/voting-elections/voting-options/vote-by-mail/apply-to-vote-by-mail",
+     "ballotInfoUrl": "http://www.lavote.gov/Locator",
+     "physicalAddress": {
+      "locationName": "Registrar-Recorder/County Clerk",
+      "line1": "12400 Imperial Highway",
+      "city": "Norwalk",
+      "state": "CA",
+      "zip": "90650"
+     }
+    },
+    "sources": [
+     {
+      "name": "Voting Information Project",
+      "official": true
+     }
+    ]
+   },
+   "sources": [
+    {
+     "name": "DemocracyWorks",
+     "official": false
+    }
+   ]
+  }
+ ],
+ "kind": "civicinfo#voterInfoResponse"
+}

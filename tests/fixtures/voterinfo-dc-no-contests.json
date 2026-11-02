@@ -1,0 +1,1341 @@
+{
+ "election": {
+  "id": "12000",
+  "name": "2026 General Midterm Election",
+  "electionDay": "2026-11-03",
+  "ocdDivisionId": "ocd-division/country:us"
+ },
+ "normalizedInput": {
+  "line1": "1600 Pennsylvania Avenue Northwest",
+  "addressLine": [
+   "1600 Pennsylvania Avenue Northwest"
+  ],
+  "city": "Washington",
+  "state": "DC",
+  "zip": "20500"
+ },
+ "pollingLocations": [
+  {
+   "address": {
+    "locationName": "M.L.K. JR. MEMORIAL LIBRARY",
+    "line1": "901 G Street, NW",
+    "addressLine": [
+     "901 G Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20001"
+   },
+   "notes": "Lobby",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.898682270970234,
+   "longitude": -77.02487104106036,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "STEAD RECREATION CENTER",
+    "line1": "1625 P Street, NW",
+    "addressLine": [
+     "1625 P Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20036"
+   },
+   "notes": "Multi-Purpose Room",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.91004790055563,
+   "longitude": -77.03762977479442,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "FIFTEENTH STREET PRESBYTERIAN CHURCH",
+    "line1": "1701 15th Street, NW",
+    "addressLine": [
+     "1701 15th Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20009"
+   },
+   "notes": "Church Hall",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.91282537042322,
+   "longitude": -77.03414726653209,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "WEST END PUBLIC LIBRARY",
+    "line1": "2301 L Street, NW",
+    "addressLine": [
+     "2301 L Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20037"
+   },
+   "notes": "Meeting Room",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.90389558551574,
+   "longitude": -77.0506217901123,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "SHILOH BAPTIST CHURCH",
+    "line1": "1500 9th Street, NW",
+    "addressLine": [
+     "1500 9th Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20001"
+   },
+   "notes": "Church Hall",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.909921304633336,
+   "longitude": -77.02424880512002,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "WALKER JONES MS/RH TERRELL REC CTR",
+    "line1": "155 L Street, NW",
+    "addressLine": [
+     "155 L Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20001"
+   },
+   "notes": "Gymnasium",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.90406859713939,
+   "longitude": -77.01360097605306,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "MARIE REED ELEMENTARY SCHOOL",
+    "line1": "2201 18th Street, NW",
+    "addressLine": [
+     "2201 18th Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20009"
+   },
+   "notes": "Gymnasium",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.918883733466274,
+   "longitude": -77.04066616954299,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "PRINCE HALL CENTER(MASONIC TEMPLE)",
+    "line1": "1000 U Street, NW",
+    "addressLine": [
+     "1000 U Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20001"
+   },
+   "notes": "Ballroom",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.91680167312522,
+   "longitude": -77.02633717514566,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "H.D. COOKE ELEMENTARY SCHOOL",
+    "line1": "2525 17th Street, NW",
+    "addressLine": [
+     "2525 17th Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20009"
+   },
+   "notes": "Multi-Purpose Room",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.923961070909854,
+   "longitude": -77.03870551923961,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "JEFFERSON MIDDLE SCHOOL ACADEMY",
+    "line1": "801 7th Street, SW",
+    "addressLine": [
+     "801 7th Street, SW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20024"
+   },
+   "notes": "Gymnasium",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.87979203199091,
+   "longitude": -77.02293596641552,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "DUNBAR SENIOR HIGH SCHOOL",
+    "line1": "101 N Street, NW",
+    "addressLine": [
+     "101 N Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20001"
+   },
+   "notes": "Armory",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.9075023603156,
+   "longitude": -77.01284678928074,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "COLUMBIA HEIGHTS COMMUNITY CENTER",
+    "line1": "1480 Girard Street, NW",
+    "addressLine": [
+     "1480 Girard Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20009"
+   },
+   "notes": "Gymnasium",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.92513782755864,
+   "longitude": -77.03501386171554,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "STUART-HOBSON MIDDLE SCHOOL",
+    "line1": "410 E Street, NE",
+    "addressLine": [
+     "410 E Street, NE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20002"
+   },
+   "notes": "Gymnasium",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.89693676259877,
+   "longitude": -76.99994211441542,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "COLUMBIA HEIGHTS EDUCATION CAMPUS",
+    "line1": "3101 16th Street, NW",
+    "addressLine": [
+     "3101 16th Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20010"
+   },
+   "notes": "Auditorium",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.929282593004125,
+   "longitude": -77.03589257445651,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "CALVARY EPISCOPAL CHURCH",
+    "line1": "820 6th Street, NE",
+    "addressLine": [
+     "820 6th Street, NE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20002"
+   },
+   "notes": "Church Hall",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.90093517610586,
+   "longitude": -76.99871583839027,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "SHERWOOD RECREATION CENTER",
+    "line1": "640 10th Street, NE",
+    "addressLine": [
+     "640 10th Street, NE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20002"
+   },
+   "notes": "Gymnasium",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.89871053490147,
+   "longitude": -76.99319120333276,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "GEORGETOWN NEIGHBORHOOD LIBRARY",
+    "line1": "3260 R Street, NW",
+    "addressLine": [
+     "3260 R Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20007"
+   },
+   "notes": "Community Room",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.91337911095832,
+   "longitude": -77.06599037992264,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "BANCROFT ELEMENTARY SCHOOL",
+    "line1": "1755 Newton Street, NW",
+    "addressLine": [
+     "1755 Newton Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20010"
+   },
+   "notes": "Gymnasium",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.93473578963594,
+   "longitude": -77.04061345958259,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "MINER ELEMENTARY SCHOOL",
+    "line1": "601 15th Street NE",
+    "addressLine": [
+     "601 15th Street NE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20002"
+   },
+   "notes": "Gymnasium",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.89746989927374,
+   "longitude": -76.98313268931037,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "KING GREENLEAF RECREATION CENTER",
+    "line1": "201 N Street, SW",
+    "addressLine": [
+     "201 N Street, SW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20024"
+   },
+   "notes": "Gymnasium",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.87499997829896,
+   "longitude": -77.0127778112281,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "OYSTER-ADAMS BILINGUAL SCHOOL",
+    "line1": "2801 Calvert Street, NW",
+    "addressLine": [
+     "2801 Calvert Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20008"
+   },
+   "notes": "Gymnasium",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.923525098616864,
+   "longitude": -77.05735500665807,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "EASTERN MARKET",
+    "line1": "225 7th Street, SE",
+    "addressLine": [
+     "225 7th Street, SE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20003"
+   },
+   "notes": "North Hall",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.88644807824622,
+   "longitude": -76.9964789995962,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "HARDY MIDDLE SCHOOL",
+    "line1": "1819 35th Street, NW",
+    "addressLine": [
+     "1819 35th Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20007"
+   },
+   "notes": "Gymnasium",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.915434375308,
+   "longitude": -77.06822883215284,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "MCKINLEY TECHNOLOGY HIGH SCHOOL",
+    "line1": "151 T Street, NE",
+    "addressLine": [
+     "151 T Street, NE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20002"
+   },
+   "notes": "Gymnasium",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.91420057799221,
+   "longitude": -77.005303960642,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "JOSEPH H. COLE RECREATION CENTER",
+    "line1": "1299 Neal Street, NE",
+    "addressLine": [
+     "1299 Neal Street, NE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20002"
+   },
+   "notes": "Community Room",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.90375462259744,
+   "longitude": -76.98751998305299,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "ROSEDALE RECREATION CENTER",
+    "line1": "1701 Gales Street, NE",
+    "addressLine": [
+     "1701 Gales Street, NE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20002"
+   },
+   "notes": "Gymnasium",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.89763294147258,
+   "longitude": -76.97903783875557,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "RAYMOND RECREATION CENTER",
+    "line1": "3725 10th Street, NW",
+    "addressLine": [
+     "3725 10th Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20010"
+   },
+   "notes": "Gymnasium",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.93669519484489,
+   "longitude": -77.0263935814598,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "POWELL ELEMENTARY SCHOOL",
+    "line1": "1350 Upshur Street, NW",
+    "addressLine": [
+     "1350 Upshur Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20011"
+   },
+   "notes": "Multi-Purpose Room",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.94150397722405,
+   "longitude": -77.03161500538769,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "ARTHUR CAPPER COMMUNITY CENTER",
+    "line1": "1000 5th Street, SE",
+    "addressLine": [
+     "1000 5th Street, SE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20003"
+   },
+   "notes": "Gymnasium",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.87795799138228,
+   "longitude": -76.99914899979629,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "WATKINS ELEMENTARY SCHOOL",
+    "line1": "420 12th Street, SE",
+    "addressLine": [
+     "420 12th Street, SE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20003"
+   },
+   "notes": "Multi-Purpose Room",
+   "pollingHours": "Tue, Nov 3: 7 am - 8 pm",
+   "latitude": 38.88312213459998,
+   "longitude": -76.99001106720608,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  }
+ ],
+ "dropOffLocations": [
+  {
+   "address": {
+    "locationName": "MARTIN LUTHER KING JR. LIBRARY",
+    "line1": "901 G Street, NW",
+    "addressLine": [
+     "901 G Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20001"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.898682270970234,
+   "longitude": -77.02487104106036,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "STEAD RECREATION CENTER",
+    "line1": "1625 P St NW",
+    "addressLine": [
+     "1625 P St NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20036"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.91004790055563,
+   "longitude": -77.03762977479442,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "FOGGY BOTTOM/GWU METRO",
+    "line1": "2301 I Street, NW",
+    "addressLine": [
+     "2301 I Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20037"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.9008791,
+   "longitude": -77.0504648,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "WEST END LIBRARY",
+    "line1": "2301 L Street, NW",
+    "addressLine": [
+     "2301 L Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20037"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.90389558551574,
+   "longitude": -77.0506217901123,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "FRANK D. REEVES CENTER",
+    "line1": "2000 14th Street, NW",
+    "addressLine": [
+     "2000 14th Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.9173078858711,
+   "longitude": -77.032385240795,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "SHAW (WATHA T. DANIEL) LIBRARY",
+    "line1": "1630 7th Street, NW",
+    "addressLine": [
+     "1630 7th Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20001"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.912446386830105,
+   "longitude": -77.0222710189893,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "DUNBAR HIGH SCHOOL",
+    "line1": "101 N Street, NW",
+    "addressLine": [
+     "101 N Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20001"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.9075023603156,
+   "longitude": -77.01284678928074,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "BB&T/TRUIST BANK (PARK AREA)",
+    "line1": "1801 Adams Mill Rd NW",
+    "addressLine": [
+     "1801 Adams Mill Rd NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20009"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.92308573206912,
+   "longitude": -77.04245636184622,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "DCPS HEADQUARTERS",
+    "line1": "1200 First Street, NE",
+    "addressLine": [
+     "1200 First Street, NE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20002"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.906062592093924,
+   "longitude": -77.00633403368877,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "MT. PLEASANT LIBRARY",
+    "line1": "3160 16th Street, NW",
+    "addressLine": [
+     "3160 16th Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20010"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.930463380910076,
+   "longitude": -77.03725473350462,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "NORTHEAST LIBRARY",
+    "line1": "330 7th Street, NE",
+    "addressLine": [
+     "330 7th Street, NE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20002"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.89437200367986,
+   "longitude": -76.99644604385887,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "COLUMBIA HEIGHTS SHOPPING CENTER",
+    "line1": "3100 14th Street, NW",
+    "addressLine": [
+     "3100 14th Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20010"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.929249999999996,
+   "longitude": -77.03294,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "SOUTHWEST LIBRARY",
+    "line1": "900 Wesley Place, SW",
+    "addressLine": [
+     "900 Wesley Place, SW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20024"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.878678906881575,
+   "longitude": -77.01582871252228,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "BANNEKER COMMUNITY CENTER",
+    "line1": "2500 Georgia Avenue, NW",
+    "addressLine": [
+     "2500 Georgia Avenue, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20001"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.92269890872373,
+   "longitude": -77.022576694931,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "GEORGETOWN LIBRARY",
+    "line1": "3260 R Street, NW",
+    "addressLine": [
+     "3260 R Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20007"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.91337911095832,
+   "longitude": -77.06599037992264,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "HARRY THOMAS RECREATION CENTER",
+    "line1": "1743 Lincoln Road NE",
+    "addressLine": [
+     "1743 Lincoln Road NE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20002"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.91401621305798,
+   "longitude": -77.00788457503619,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "UNION MARKET DC (6TH STREET ENTRANCE)",
+    "line1": "1309 5th Street, NE",
+    "addressLine": [
+     "1309 5th Street, NE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20002"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.908524313836466,
+   "longitude": -76.99764879065938,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "BOE HEADQUARTERS",
+    "line1": "1015 Half Street, SE",
+    "addressLine": [
+     "1015 Half Street, SE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20003"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.87811271659177,
+   "longitude": -77.00791928514285,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "EASTERN MARKET",
+    "line1": "225 7th Street, SE",
+    "addressLine": [
+     "225 7th Street, SE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20003"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.88644807824622,
+   "longitude": -76.9964789995962,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "JOSEPH H. COLE RECREATION CENTER",
+    "line1": "1299 Neal Street, NE",
+    "addressLine": [
+     "1299 Neal Street, NE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20002"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.90375462259744,
+   "longitude": -76.98751998305299,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "ROSEDALE LIBRARY",
+    "line1": "1701 Gales Street, NE",
+    "addressLine": [
+     "1701 Gales Street, NE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20002"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.89763294147258,
+   "longitude": -76.97903783875557,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "GUY MASON RECREATION CENTER",
+    "line1": "3600 Calvert Street, NW",
+    "addressLine": [
+     "3600 Calvert Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20007"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.92215953608668,
+   "longitude": -77.07122950141573,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "PAYNE ELEMENTARY SCHOOL",
+    "line1": "1445 C Street, SE",
+    "addressLine": [
+     "1445 C Street, SE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20003"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.88492666103162,
+   "longitude": -76.98470426884056,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "CLEVELAND PARK LIBRARY",
+    "line1": "3310 Connecticut Avenue, NW",
+    "addressLine": [
+     "3310 Connecticut Avenue, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20008"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.933854382527464,
+   "longitude": -77.05797276811583,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "PETWORTH LIBRARY",
+    "line1": "4200 Kansas Avenue, NW",
+    "addressLine": [
+     "4200 Kansas Avenue, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20011"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.94219216864837,
+   "longitude": -77.02614300367637,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "MONROE STREET MARKET (OUTSIDE OF BUSBOYS AND POETS CLOSER TO CURB)",
+    "line1": "625 Monroe Street, NE",
+    "addressLine": [
+     "625 Monroe Street, NE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20017"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.93211476073075,
+   "longitude": -76.99778166682243,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "SECOND DISTRICT POLICE STATION",
+    "line1": "3320 Idaho Avenue, NW",
+    "addressLine": [
+     "3320 Idaho Avenue, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20016"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.93482251435351,
+   "longitude": -77.07484399432812,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "PALISADES LIBRARY",
+    "line1": "4901 V Street, NW",
+    "addressLine": [
+     "4901 V Street, NW"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20007"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.91830312066702,
+   "longitude": -77.09703313287139,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "DEPARTMENT OF HUMAN SERVICES",
+    "line1": "2100 Martin Luther King Jr. Avenue, SE",
+    "addressLine": [
+     "2100 Martin Luther King Jr. Avenue, SE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20020"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.86534453274015,
+   "longitude": -76.98939638656181,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  },
+  {
+   "address": {
+    "locationName": "BENNING (DOROTHY I. HEIGHT) LIBRARY",
+    "line1": "3935 Benning Road, NE",
+    "addressLine": [
+     "3935 Benning Road, NE"
+    ],
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20019"
+   },
+   "pollingHours": "Fri, Oct 9: 11:00 am - 11:59 pm\nSat, Oct 10: 12:00 am - 11:59 pm\nSun, Oct 11: 12:00 am - 11:59 pm\nMon, Oct 12: 12:00 am - 11:59 pm\nTue, Oct 13: 12:00 am - 11:59 pm\nWed, Oct 14: 12:00 am - 11:59 pm\nThu, Oct 15: 12:00 am - 11:59 pm\nFri, Oct 16: 12:00 am - 11:59 pm\nSat, Oct 17: 12:00 am - 11:59 pm\nSun, Oct 18: 12:00 am - 11:59 pm\nMon, Oct 19: 12:00 am - 11:59 pm\nTue, Oct 20: 12:00 am - 11:59 pm\nWed, Oct 21: 12:00 am - 11:59 pm\nThu, Oct 22: 12:00 am - 11:59 pm\nFri, Oct 23: 12:00 am - 11:59 pm\nSat, Oct 24: 12:00 am - 11:59 pm\nSun, Oct 25: 12:00 am - 11:59 pm\nMon, Oct 26: 12:00 am - 11:59 pm\nTue, Oct 27: 12:00 am - 11:59 pm\nWed, Oct 28: 12:00 am - 11:59 pm\nThu, Oct 29: 12:00 am - 11:59 pm\nFri, Oct 30: 12:00 am - 11:59 pm\nSat, Oct 31: 12:00 am - 11:59 pm\nSun, Nov 1: 12:00 am - 11:59 pm\nMon, Nov 2: 12:00 am - 11:59 pm\nTue, Nov 3: 12 am - 8 pm",
+   "latitude": 38.89430517083402,
+   "longitude": -76.94783840058908,
+   "sources": [
+    {
+     "name": "Voting Information Project",
+     "official": true
+    }
+   ]
+  }
+ ],
+ "state": [
+  {
+   "name": "District of Columbia",
+   "electionAdministrationBody": {
+    "name": "Board of Elections",
+    "electionInfoUrl": "https://dcboe.org/",
+    "electionRegistrationUrl": "https://vr.dcboe.org/213324797239968?agency_code=12",
+    "electionRegistrationConfirmationUrl": "https://www.dcboe.org/Voters/Register-To-Vote/Check-Voter-Registration-Status",
+    "absenteeVotingInfoUrl": "https://vr.dcboe.org/213115759199060",
+    "votingLocationFinderUrl": "https://dcboe.org/voters/find-out-where-to-vote/vote-center-locator-tool",
+    "ballotInfoUrl": "https://dcboe.org/elections/2024-elections",
+    "electionRulesUrl": "https://www.dcboe.org/voters/casting-your-vote/mail-ballot-request",
+    "correspondenceAddress": {
+     "line1": "1015 Half Street, SE, Suite 750",
+     "addressLine": [
+      "1015 Half Street, SE, Suite 750"
+     ],
+     "city": "Washington",
+     "state": "",
+     "zip": "20003"
+    }
+   },
+   "sources": [
+    {
+     "name": "DemocracyWorks",
+     "official": false
+    }
+   ]
+  }
+ ],
+ "kind": "civicinfo#voterInfoResponse"
+}
