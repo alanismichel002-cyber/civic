@@ -5,6 +5,7 @@ import { addressOneLine, formatDay, softCase } from "../lib/format.ts";
 import { downloadFile } from "../lib/ics.ts";
 import { useI18n, type MessageKey } from "../lib/i18n.tsx";
 import { groupContests } from "./SampleBallot.tsx";
+import { track } from "../lib/analytics.ts";
 
 /** FR-12: printable / saveable summary of the voter's own choices. */
 export function CheatSheet({ info, choices }: { info: VoterInfo; choices: Choices }) {
@@ -20,16 +21,19 @@ export function CheatSheet({ info, choices }: { info: VoterInfo; choices: Choice
     try {
       const { toBlob } = await import("html-to-image");
       const blob = await toBlob(sheetRef.current, { backgroundColor: "#ffffff", pixelRatio: 2, cacheBust: true });
-      if (blob) downloadFile(`cheat-sheet-${info.election.id}.png`, blob);
+      if (blob) {
+        downloadFile(`cheat-sheet-${info.election.id}.png`, blob);
+        track("cheatsheet", { method: "image" });
+      }
     } finally {
       setSaving(false);
     }
   }
 
   return (
-    <div className="space-y-4">
-      <section className="card no-print" aria-labelledby="sheet-title">
-        <h2 id="sheet-title" className="h2">
+    <div className="grid items-start gap-[18px] lg:grid-cols-[minmax(0,1fr)_minmax(0,1.5fr)]">
+      <section className="card no-print lg:sticky lg:top-28" aria-labelledby="sheet-title">
+        <h2 id="sheet-title" className="text-[28px] font-bold tracking-[-0.035em] text-[#0b1220] sm:text-[32px] dark:text-white">
           {t("sheet.heading")}
         </h2>
         <p className="mt-1">{t("sheet.lead")}</p>
@@ -41,11 +45,14 @@ export function CheatSheet({ info, choices }: { info: VoterInfo; choices: Choice
             </a>
           </p>
         ) : (
-          <div className="mt-3 flex flex-wrap gap-2">
-            <button type="button" className="btn-primary" onClick={() => window.print()}>
+          <div className="mt-5 flex flex-col gap-2">
+            <button type="button" className="btn-primary w-full" onClick={() => {
+                track("cheatsheet", { method: "print" });
+                window.print();
+              }}>
               <span aria-hidden="true">🖨</span> {t("sheet.print")}
             </button>
-            <button type="button" className="btn-secondary" onClick={saveImage} disabled={saving}>
+            <button type="button" className="btn-secondary w-full" onClick={saveImage} disabled={saving}>
               {saving ? t("sheet.saving") : t("sheet.image")}
             </button>
           </div>
@@ -54,7 +61,7 @@ export function CheatSheet({ info, choices }: { info: VoterInfo; choices: Choice
 
       {marked.length > 0 && (
         // Always light so the printed page and saved image look the same.
-        <div ref={sheetRef} className="rounded-2xl border border-slate-300 bg-white p-5 text-slate-900 sm:p-8">
+        <div ref={sheetRef} className="rounded-[22px] bg-white p-5 text-slate-900 shadow-[0_30px_70px_rgba(30,40,110,.2)] sm:p-8 print:shadow-none">
           <p className="text-sm font-semibold uppercase tracking-wide text-slate-600">{info.election.name}</p>
           <p className="text-2xl font-bold">{formatDay(info.election.day, lang)}</p>
           {polling && (

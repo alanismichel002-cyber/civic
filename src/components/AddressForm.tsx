@@ -105,15 +105,16 @@ export function AddressForm({ initialValue = "", loading, onSubmit, compact = fa
 
   return (
     <form onSubmit={submit} noValidate role="search" aria-label={t("form.label")}>
-      <label htmlFor={`${id}-input`} className={compact ? "sr-only" : "mb-1 block text-base font-semibold"}>
+      <label htmlFor={`${id}-input`} className={compact ? "sr-only" : "mb-2 block pl-[22px] text-sm font-semibold"}>
         {t("form.label")}
       </label>
-      {!compact && (
-        <p id={hintId} className="muted mb-2 text-sm">
-          {t("form.hint")}
-        </p>
-      )}
-      <div className={`flex gap-2 ${compact ? "flex-row" : "flex-col sm:flex-row"}`}>
+      <div
+        className={
+          compact
+            ? "glass flex gap-1.5 rounded-full p-1.5"
+            : "flex flex-col gap-2 sm:glass sm:flex-row sm:rounded-full sm:p-2"
+        }
+      >
         <div className="relative flex-1">
           <input
             id={`${id}-input`}
@@ -121,7 +122,11 @@ export function AddressForm({ initialValue = "", loading, onSubmit, compact = fa
             inputMode="text"
             autoComplete="street-address"
             spellCheck={false}
-            className="input"
+            className={
+              compact
+                ? "input min-h-[44px] border-0 bg-transparent text-[15px] shadow-none backdrop-blur-none dark:bg-transparent"
+                : "input sm:border-0 sm:bg-transparent sm:shadow-none sm:backdrop-blur-none sm:dark:bg-transparent"
+            }
             placeholder={t("form.placeholder")}
             value={value}
             onChange={(e) => {
@@ -151,7 +156,7 @@ export function AddressForm({ initialValue = "", loading, onSubmit, compact = fa
             role="listbox"
             aria-label={t("form.suggestions")}
             hidden={!expanded}
-            className="absolute z-[1000] mt-1 max-h-72 w-full overflow-auto rounded-xl border border-slate-300 bg-white py-1 shadow-lg dark:border-slate-600 dark:bg-slate-900"
+            className="absolute z-[1000] mt-2 max-h-72 w-full overflow-auto rounded-[22px] border border-white/85 bg-white/90 py-1.5 shadow-[0_20px_50px_rgba(30,40,110,.18)] backdrop-blur-[32px] dark:border-white/10 dark:bg-slate-900/95"
           >
             {suggestions.map((s, i) => (
               <li
@@ -160,8 +165,8 @@ export function AddressForm({ initialValue = "", loading, onSubmit, compact = fa
                 role="option"
                 aria-selected={i === active}
                 className={
-                  "cursor-pointer px-4 py-3 text-base " +
-                  (i === active ? "bg-brand-100 dark:bg-slate-700" : "hover:bg-slate-100 dark:hover:bg-slate-800")
+                  "mx-1.5 cursor-pointer rounded-2xl px-4 py-3 text-base " +
+                  (i === active ? "bg-brand-100 dark:bg-white/15" : "hover:bg-white dark:hover:bg-white/10")
                 }
                 onMouseDown={(e) => {
                   e.preventDefault();
@@ -176,12 +181,25 @@ export function AddressForm({ initialValue = "", loading, onSubmit, compact = fa
             {expanded ? t("form.suggestionsCount", { n: suggestions.length }) : ""}
           </span>
         </div>
-        <button type="submit" className="btn-primary shrink-0" disabled={loading}>
+        <button
+          type="submit"
+          className={
+            compact
+              ? "btn shrink-0 bg-slate-900/90 px-4 text-[15px] text-white hover:bg-slate-900 dark:bg-white/90 dark:text-slate-900"
+              : "btn-primary w-full shrink-0 sm:w-auto"
+          }
+          disabled={loading}
+        >
           {loading ? t("form.loading") : t("form.submit")}
         </button>
       </div>
+      {!compact && (
+        <p id={hintId} className="muted mt-3 pl-[22px] text-[13px]">
+          {t("form.hint")}
+        </p>
+      )}
       {error && (
-        <p id={errorId} className="mt-2 font-medium text-red-700 dark:text-red-300">
+        <p id={errorId} className="mt-2 pl-[22px] font-medium text-red-700 dark:text-red-300">
           {error}
         </p>
       )}

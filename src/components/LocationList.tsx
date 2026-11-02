@@ -11,7 +11,7 @@ export function LocationList({ items, total, numbered = true }: { items: VotingL
   const shown = expanded ? items : items.slice(0, INITIAL);
   return (
     <div>
-      <ol className="space-y-3">
+      <ol className="grid gap-3 md:grid-cols-2">
         {shown.map((l, i) => (
           <li key={l.id}>
             <LocationCard loc={l} index={numbered ? i : undefined} highlight={i === 0 && numbered} />

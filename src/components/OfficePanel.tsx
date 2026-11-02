@@ -15,7 +15,7 @@ export function OfficePanel({ offices }: { offices: ElectionOffice[] }) {
       <p className="muted mt-1">{t("office.lead")}</p>
       <div className="mt-4 grid gap-4 md:grid-cols-2">
         {offices.map((o) => (
-          <article key={`${o.scope}-${o.jurisdiction}`} className="rounded-xl border border-slate-200 p-4 dark:border-slate-700">
+          <article key={`${o.scope}-${o.jurisdiction}`} className="card-inset">
             <p className="text-xs font-semibold uppercase tracking-wide text-slate-600 dark:text-slate-400">
               {o.scope === "state" ? t("office.state") : t("office.local")}
             </p>

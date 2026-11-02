@@ -126,12 +126,30 @@ export async function handleVoterInfo(req: Request, env: HandlerEnv): Promise<Re
   const electionId = validateElectionId(body?.electionId);
   if (electionId === null) return errorResponse("bad_request", "Invalid election.", 400);
 
+  const result = await lookupVoterInfo(address, electionId, env.apiKey, env.fetch ?? fetch);
+  if (!result.ok) return result.response;
+  return json(result.info, 200, { "x-cache": result.cached ? "HIT" : "MISS" });
+}
+
+export type VoterInfoLookup =
+  | { ok: true; info: VoterInfo; cached: boolean }
+  | { ok: false; response: Response };
+
+/**
+ * Cached Google voterinfo lookup + geocode + normalization. Shared by /api/voterinfo and
+ * by server features that need the same data (e.g. measure summaries).
+ */
+export async function lookupVoterInfo(
+  address: string,
+  electionId: string | undefined,
+  apiKey: string,
+  f: typeof fetch,
+): Promise<VoterInfoLookup> {
   const cacheKey = await sha256(`${address.toLowerCase()}|${electionId ?? ""}`);
   const cached = voterInfoCache.get(cacheKey);
-  if (cached) return json(cached, 200, { "x-cache": "HIT" });
+  if (cached) return { ok: true, info: cached, cached: true };
 
-  const f = env.fetch ?? fetch;
-  const params = new URLSearchParams({ key: env.apiKey, address });
+  const params = new URLSearchParams({ key: apiKey, address });
   if (electionId) params.set("electionId", electionId);
 
   let googleRes: Response;
@@ -139,42 +157,44 @@ export async function handleVoterInfo(req: Request, env: HandlerEnv): Promise<Re
   try {
     googleRes = await f(`${CIVIC_BASE}/voterinfo?${params}`, { signal: AbortSignal.timeout(8000) });
   } catch {
-    return errorResponse("upstream_error", "The election data service did not respond. Please try again.", 502);
+    return fail("upstream_error", "The election data service did not respond. Please try again.", 502);
   }
 
   if (!googleRes.ok) {
     const message = (await readGoogleError(googleRes)).toLowerCase();
     if (googleRes.status === 400 && message.includes("parse address")) {
-      return errorResponse(
+      return fail(
         "address_not_found",
         "We couldn't find that address. Check the street, city and state, and use your residential (registered) address.",
         422,
       );
     }
     if ((googleRes.status === 400 || googleRes.status === 404) && message.includes("election")) {
-      return errorResponse("no_election_data", "No election data is available for this address right now.", 404);
+      return fail("no_election_data", "No election data is available for this address right now.", 404);
     }
     if (googleRes.status === 429 || message.includes("quota") || message.includes("rate")) {
-      return errorResponse("upstream_error", "The election data service is busy. Please try again shortly.", 503);
+      return fail("upstream_error", "The election data service is busy. Please try again shortly.", 503);
     }
     // Includes invalid/misconfigured API key. Details stay server-side.
     console.error(`[voterinfo] upstream ${googleRes.status}`);
-    return errorResponse("upstream_error", "The election data service returned an error.", 502);
+    return fail("upstream_error", "The election data service returned an error.", 502);
   }
 
   let raw: unknown;
   try {
     raw = await googleRes.json();
   } catch {
-    return errorResponse("upstream_error", "The election data service returned an unreadable response.", 502);
+    return fail("upstream_error", "The election data service returned an unreadable response.", 502);
   }
   const origin = await geoPromise;
   const info = normalizeVoterInfo(raw, origin);
-  if (!info) {
-    return errorResponse("no_election_data", "No election data is available for this address right now.", 404);
-  }
+  if (!info) return fail("no_election_data", "No election data is available for this address right now.", 404);
   voterInfoCache.set(cacheKey, info);
-  return json(info, 200, { "x-cache": "MISS" });
+  return { ok: true, info, cached: false };
+}
+
+function fail(code: ApiErrorCode, message: string, status: number): VoterInfoLookup {
+  return { ok: false, response: errorResponse(code, message, status) };
 }
 
 // ---------------------------------------------------------------- /api/elections

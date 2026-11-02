@@ -194,6 +194,88 @@ const en = {
   "footer.data": "Election data: Google Civic Information API / Voting Information Project. Maps © OpenStreetMap contributors.",
   "footer.privacy": "Privacy: we don't store or log your address, and we don't use ad trackers.",
   "footer.report": "Report a problem",
+
+  "nav.reps": "Representatives",
+  "nav.repsShort": "Reps",
+
+  "err.not_found": "We couldn't find that item.",
+  "err.feature_disabled": "This feature isn't turned on for this site yet.",
+  "err.summary_unavailable": "A summary isn't available right now.",
+
+  "candidate.back": "Back to your sample ballot",
+  "candidate.details": "see candidate details",
+  "candidate.runningFor": "Running for",
+  "candidate.mark": "Mark as my choice",
+  "candidate.marked": "Marked as my choice",
+  "candidate.contact": "Website and contact",
+  "candidate.noContact": "No website or contact information was provided for this candidate.",
+  "candidate.neutral":
+    "Candidate details come from election officials and the candidates themselves. Civic doesn't edit, rank or endorse candidates.",
+  "candidate.others": "Everyone running in this race",
+  "candidate.ballotOrder": "In official ballot order.",
+  "candidate.notFound": "We couldn't find that candidate. The ballot may have changed.",
+
+  "ai.button": "Explain in plain language",
+  "ai.loading": "Writing a summary…",
+  "ai.hint": "AI-generated summary of the official text. It may contain mistakes.",
+  "ai.badge": "AI",
+  "ai.title": "Plain-language summary",
+  "ai.disclaimer":
+    "Written by AI from the official ballot text. It can make mistakes and is not official. Read the full official text below before you decide.",
+  "ai.error": "We couldn't create a summary right now. The official text is below.",
+
+  "remind.title": "Get reminders",
+  "remind.lead": "We'll remind you when early voting starts, the day before Election Day, and on Election Day.",
+  "remind.how": "How should we remind you?",
+  "remind.email": "Email",
+  "remind.sms": "Text message",
+  "remind.emailLabel": "Email address",
+  "remind.phoneLabel": "U.S. mobile number",
+  "remind.consentEmail": "Yes, email me voting reminders for this election. I can unsubscribe with one tap.",
+  "remind.consentSms":
+    "Yes, text me up to 4 voting reminders for this election. Message and data rates may apply. Reply STOP to opt out.",
+  "remind.needConsent": "Please check the box to agree to reminders.",
+  "remind.submit": "Sign up for reminders",
+  "remind.checkEmail": "Almost done! Check your email and tap the link to confirm.",
+  "remind.checkPhone": "Almost done! Check your texts and tap the link to confirm.",
+  "remind.badEmail": "Enter a valid email address.",
+  "remind.badPhone": "Enter a valid U.S. mobile number.",
+  "remind.privacy":
+    "We store only your email or phone number, language, and this election's dates and polling place, never your home address. Everything is deleted after the election.",
+
+  "reps.heading": "Who represents you",
+  "reps.lead": "Your members of Congress and state legislators, based on your home address.",
+  "reps.loading": "Looking up your representatives…",
+  "reps.state": "State",
+  "reps.cd": "Congressional district",
+  "reps.upper": "State senate district",
+  "reps.lower": "State house district",
+  "reps.county": "County",
+  "reps.federal": "U.S. Congress",
+  "reps.stateLeg": "State legislature",
+  "reps.stateFallback": "We can't list state legislators here yet. Use the official lookup:",
+  "reps.findState": "Find your state legislators",
+  "reps.none": "No one was found for this address.",
+  "reps.contactForm": "Contact form",
+  "reps.divisions": "All the districts this address is in",
+  "reps.note":
+    "Representatives are listed by office, with no ranking or endorsement. Districts can change after redistricting, so confirm with your state's official sources.",
+
+  "report.heading": "Report a problem",
+  "report.lead":
+    "Spotted wrong or missing information, or something that doesn't work? Tell us. Please don't include your home address.",
+  "report.kind": "What kind of problem?",
+  "report.kind.wrong": "Wrong information",
+  "report.kind.missing": "Missing information",
+  "report.kind.bug": "Something doesn't work",
+  "report.kind.accessibility": "Accessibility problem",
+  "report.kind.other": "Something else",
+  "report.message": "What happened?",
+  "report.messageHint": "Include the election, race or location name if it helps.",
+  "report.email": "Your email (optional, only if you'd like a reply)",
+  "report.submit": "Send report",
+  "report.thanks": "Thank you! We've received your report.",
+  "report.error": "We couldn't send your report. Please try again.",
 };
 
 export type MessageKey = keyof typeof en;
@@ -395,6 +477,90 @@ const es: Dictionary = {
     "Datos electorales: API de Información Cívica de Google / Voting Information Project. Mapas © colaboradores de OpenStreetMap.",
   "footer.privacy": "Privacidad: no guardamos ni registramos su dirección, y no usamos rastreadores publicitarios.",
   "footer.report": "Reportar un problema",
+
+  "nav.reps": "Representantes",
+  "nav.repsShort": "Repres.",
+
+  "err.not_found": "No encontramos ese elemento.",
+  "err.feature_disabled": "Esta función aún no está activada en este sitio.",
+  "err.summary_unavailable": "No hay un resumen disponible en este momento.",
+
+  "candidate.back": "Volver a su boleta de muestra",
+  "candidate.details": "ver detalles del candidato",
+  "candidate.runningFor": "Candidato a",
+  "candidate.mark": "Marcar como mi selección",
+  "candidate.marked": "Marcado como mi selección",
+  "candidate.contact": "Sitio web y contacto",
+  "candidate.noContact": "No se proporcionó un sitio web ni datos de contacto para este candidato.",
+  "candidate.neutral":
+    "Los datos de los candidatos provienen de los funcionarios electorales y de los propios candidatos. Civic no edita, clasifica ni respalda candidatos.",
+  "candidate.others": "Todos los candidatos en esta contienda",
+  "candidate.ballotOrder": "En el orden oficial de la boleta.",
+  "candidate.notFound": "No encontramos a ese candidato. Puede que la boleta haya cambiado.",
+
+  "ai.button": "Explicar en lenguaje sencillo",
+  "ai.loading": "Escribiendo un resumen…",
+  "ai.hint": "Resumen del texto oficial generado por IA. Puede contener errores.",
+  "ai.badge": "IA",
+  "ai.title": "Resumen en lenguaje sencillo",
+  "ai.disclaimer":
+    "Escrito por IA a partir del texto oficial de la boleta. Puede tener errores y no es oficial. Lea el texto oficial completo abajo antes de decidir.",
+  "ai.error": "No pudimos crear un resumen ahora. El texto oficial está abajo.",
+
+  "remind.title": "Reciba recordatorios",
+  "remind.lead":
+    "Le recordaremos cuando empiece la votación anticipada, el día antes de la elección y el día de la elección.",
+  "remind.how": "¿Cómo quiere recibir los recordatorios?",
+  "remind.email": "Correo electrónico",
+  "remind.sms": "Mensaje de texto",
+  "remind.emailLabel": "Correo electrónico",
+  "remind.phoneLabel": "Número de celular de EE. UU.",
+  "remind.consentEmail":
+    "Sí, envíenme recordatorios de votación por correo para esta elección. Puedo cancelar con un toque.",
+  "remind.consentSms":
+    "Sí, envíenme hasta 4 recordatorios de votación por texto para esta elección. Pueden aplicarse tarifas de mensajes y datos. Responda STOP para cancelar.",
+  "remind.needConsent": "Marque la casilla para aceptar los recordatorios.",
+  "remind.submit": "Inscribirme en los recordatorios",
+  "remind.checkEmail": "¡Casi listo! Revise su correo y toque el enlace para confirmar.",
+  "remind.checkPhone": "¡Casi listo! Revise sus mensajes y toque el enlace para confirmar.",
+  "remind.badEmail": "Ingrese un correo electrónico válido.",
+  "remind.badPhone": "Ingrese un número de celular de EE. UU. válido.",
+  "remind.privacy":
+    "Solo guardamos su correo o teléfono, su idioma y las fechas y el centro de votación de esta elección, nunca la dirección de su casa. Todo se borra después de la elección.",
+
+  "reps.heading": "Quién le representa",
+  "reps.lead": "Sus miembros del Congreso y legisladores estatales, según la dirección de su casa.",
+  "reps.loading": "Buscando a sus representantes…",
+  "reps.state": "Estado",
+  "reps.cd": "Distrito del Congreso",
+  "reps.upper": "Distrito del senado estatal",
+  "reps.lower": "Distrito de la cámara estatal",
+  "reps.county": "Condado",
+  "reps.federal": "Congreso de EE. UU.",
+  "reps.stateLeg": "Legislatura estatal",
+  "reps.stateFallback": "Aún no podemos mostrar a los legisladores estatales aquí. Use la búsqueda oficial:",
+  "reps.findState": "Buscar a sus legisladores estatales",
+  "reps.none": "No se encontró a nadie para esta dirección.",
+  "reps.contactForm": "Formulario de contacto",
+  "reps.divisions": "Todos los distritos de esta dirección",
+  "reps.note":
+    "Los representantes aparecen por cargo, sin clasificación ni respaldo. Los distritos pueden cambiar después de una redistribución, así que confirme con las fuentes oficiales de su estado.",
+
+  "report.heading": "Reportar un problema",
+  "report.lead":
+    "¿Vio información incorrecta o faltante, o algo que no funciona? Avísenos. Por favor no incluya la dirección de su casa.",
+  "report.kind": "¿Qué tipo de problema?",
+  "report.kind.wrong": "Información incorrecta",
+  "report.kind.missing": "Información faltante",
+  "report.kind.bug": "Algo no funciona",
+  "report.kind.accessibility": "Problema de accesibilidad",
+  "report.kind.other": "Otra cosa",
+  "report.message": "¿Qué pasó?",
+  "report.messageHint": "Incluya el nombre de la elección, la contienda o el lugar si ayuda.",
+  "report.email": "Su correo (opcional, solo si quiere una respuesta)",
+  "report.submit": "Enviar reporte",
+  "report.thanks": "¡Gracias! Recibimos su reporte.",
+  "report.error": "No pudimos enviar su reporte. Inténtelo de nuevo.",
 };
 
 export type Lang = "en" | "es";

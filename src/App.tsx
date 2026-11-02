@@ -7,37 +7,52 @@ import { EmptyState } from "./components/EmptyState.tsx";
 import { ErrorNotice } from "./components/ErrorNotice.tsx";
 import { SampleBallot } from "./components/SampleBallot.tsx";
 import { SharedPlanView } from "./components/SharedPlanView.tsx";
-import { ElectionHeader, VotingPlan } from "./components/VotingPlan.tsx";
+import { ElectionHeader, PlanChecklist, VotingPlan } from "./components/VotingPlan.tsx";
 import { ApiRequestError, fetchElections, fetchVoterInfo } from "./lib/api.ts";
 import { useChoices } from "./lib/choices.ts";
 import { formatDay } from "./lib/format.ts";
 import { useI18n } from "./lib/i18n.tsx";
 import { decodePlan } from "./lib/share.ts";
 import { session } from "./lib/storage.ts";
+import { CandidatePage } from "./components/CandidatePage.tsx";
+import { RepresentativesView } from "./components/RepresentativesView.tsx";
+import { ReportPage } from "./components/ReportPage.tsx";
+import { useFeatures } from "./lib/features.ts";
+import { track, trackPage } from "./lib/analytics.ts";
 
-type View = "home" | "plan" | "ballot" | "sheet" | "shared";
+type View = "home" | "plan" | "ballot" | "sheet" | "reps" | "candidate" | "report" | "shared";
+type TabView = "plan" | "ballot" | "sheet" | "reps";
+const TABS: TabView[] = ["plan", "ballot", "sheet", "reps"];
 
 interface Route {
   view: View;
   shared?: string;
+  contestId?: string;
+  index?: number;
 }
 
 /** Only hashes that start with "#/" are routes; plain "#id" anchors are in-page links. */
-function parseRoute(hash: string): Route | undefined {
+export function parseRoute(hash: string): Route | undefined {
   if (!hash.startsWith("#/")) return hash ? undefined : { view: "home" };
-  const [, view, data] = hash.split("/");
-  if (view === "plan" || view === "ballot" || view === "sheet") return { view };
-  if (view === "shared" && data) return { view: "shared", shared: data };
+  const [, view, a, b] = hash.split("/");
+  if ((TABS as string[]).includes(view) || view === "report") return { view: view as View };
+  if (view === "shared" && a) return { view: "shared", shared: a };
+  if (view === "candidate" && a && b !== undefined && /^\d+$/.test(b)) {
+    try {
+      return { view: "candidate", contestId: decodeURIComponent(a), index: Number(b) };
+    } catch {
+      return { view: "home" };
+    }
+  }
   return { view: "home" };
 }
 
-function navigate(view: Exclude<View, "shared">) {
+function navigate(view: "home" | TabView) {
   const hash = view === "home" ? "#/" : `#/${view}`;
   if (window.location.hash !== hash) window.location.hash = hash;
 }
 
 const DEMO = { address: "340 Main St, Venice, CA 90291", electionId: "2000" };
-const REPORT_URL = "https://github.com/alanismichel002-cyber/civic/issues/new";
 
 export function App() {
   const { t, lang, setLang } = useI18n();
@@ -45,6 +60,7 @@ export function App() {
   const [address, setAddress] = useState<string>(() => session.get("civic.address") ?? "");
   const [electionId, setElectionId] = useState<string | undefined>(() => session.get("civic.electionId") ?? undefined);
   const [info, setInfo] = useState<VoterInfo | null>(null);
+  const features = useFeatures();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const mainRef = useRef<HTMLElement>(null);
@@ -58,6 +74,8 @@ export function App() {
     window.addEventListener("hashchange", onHash);
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
+
+  useEffect(() => trackPage(route.view), [route.view]);
 
   // Move focus to the main region on view changes so screen readers announce the new content.
   const firstRender = useRef(true);
@@ -85,12 +103,14 @@ export function App() {
       const result = await fetchVoterInfo(addr, eid, controller.signal);
       if (controller.signal.aborted) return;
       setInfo(result);
+      track("lookup", { result: result.isEmpty ? "empty" : "ok" });
       const r = parseRoute(window.location.hash);
       if (!r || r.view === "home" || r.view === "shared") navigate("plan");
     } catch (e) {
       if (controller.signal.aborted) return;
       setInfo(null);
       setError(e instanceof ApiRequestError ? e.code : "network");
+      track("lookup", { result: e instanceof ApiRequestError ? e.code : "network" });
       const r = parseRoute(window.location.hash);
       if (!r || r.view === "home" || r.view === "shared") navigate("plan");
     } finally {
@@ -100,7 +120,7 @@ export function App() {
 
   // Restore results after a refresh (address is kept in sessionStorage for this tab only).
   useEffect(() => {
-    if (route.view !== "home" && route.view !== "shared" && !info && !loading && !error) {
+    if (needsInfo(route.view) && !info && !loading && !error) {
       if (address) void lookup(address, electionId);
       else navigate("home");
     }
@@ -117,10 +137,39 @@ export function App() {
     navigate("home");
   };
 
-  const inResults = route.view === "plan" || route.view === "ballot" || route.view === "sheet";
+  const inResults = needsInfo(route.view);
+
+
+  const navTabs = (extra: string, compactLabels = false) => (
+    <nav aria-label={t("nav.label")} className={extra}>
+      <ul className="seg-track w-full">
+        {TABS.map((v) => {
+          const current = route.view === v || (v === "ballot" && route.view === "candidate");
+          return (
+            <li key={v} className="flex-1">
+              <a
+                href={`#/${v}`}
+                aria-current={current ? "page" : undefined}
+                className={`seg-item w-full ${compactLabels ? "px-1.5 text-[13px]" : "px-3 lg:px-[18px]"}`}
+              >
+                {compactLabels && v === "reps" ? (
+                  <>
+                    <span aria-hidden="true">{t("nav.repsShort")}</span>
+                    <span className="sr-only">{t("nav.reps")}</span>
+                  </>
+                ) : (
+                  t(`nav.${v}`)
+                )}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
+  );
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="relative isolate flex min-h-screen flex-col">
       <a
         href="#main"
         onClick={(e) => {
@@ -132,15 +181,22 @@ export function App() {
         {t("app.skip")}
       </a>
 
-      <header className="no-print border-b border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900">
-        <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3">
-          <a href="#/" onClick={startOver} className="flex items-center gap-2 text-xl font-extrabold tracking-tight no-underline">
-            <img src="/favicon.svg" alt="" width={32} height={32} />
+      <div aria-hidden="true" className="bg-blobs pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+        <span className="blob-a" />
+        <span className="blob-b" />
+        <span className="blob-c" />
+      </div>
+
+      <header className="no-print sticky top-3 z-50 mx-3 mt-3 sm:top-5 sm:mx-8 sm:mt-5">
+        <div className="glass-bar mx-auto flex h-14 max-w-5xl items-center justify-between gap-3 rounded-full pl-4 pr-2">
+          <a href="#/" onClick={startOver} className="flex shrink-0 items-center gap-2 text-lg font-bold tracking-tight text-[#0b1220] no-underline dark:text-white">
+            <img src="/favicon.svg" alt="" width={28} height={28} />
             <span>{t("app.name")}</span>
           </a>
+          {inResults && navTabs("hidden md:block")}
           <button
             type="button"
-            className="btn-ghost min-h-[40px] px-3 text-sm"
+            className="btn min-h-[40px] shrink-0 border border-white/80 bg-white/60 px-4 text-sm text-slate-800 hover:bg-white/80 dark:border-white/10 dark:bg-white/10 dark:text-slate-100"
             onClick={() => setLang(lang === "en" ? "es" : "en")}
             lang={lang === "en" ? "es" : "en"}
             aria-label={t("lang.switchLabel")}
@@ -148,34 +204,19 @@ export function App() {
             {t("lang.switch")}
           </button>
         </div>
-        {inResults && (
-          <nav aria-label={t("nav.label")} className="mx-auto max-w-5xl px-4">
-            <ul className="-mb-px flex gap-1 overflow-x-auto">
-              {(["plan", "ballot", "sheet"] as const).map((v) => (
-                <li key={v}>
-                  <a
-                    href={`#/${v}`}
-                    aria-current={route.view === v ? "page" : undefined}
-                    className={
-                      "inline-flex min-h-[44px] items-center whitespace-nowrap border-b-[3px] px-3 font-semibold no-underline " +
-                      (route.view === v
-                        ? "border-brand-700 text-brand-700 dark:border-sky-300 dark:text-sky-300"
-                        : "border-transparent text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100")
-                    }
-                  >
-                    {t(`nav.${v}`)}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        )}
       </header>
+      {inResults && (
+        <div className="no-print fixed inset-x-[18px] bottom-6 z-50 md:hidden">
+          <div className="glass-bar rounded-full p-1.5">{navTabs("", true)}</div>
+        </div>
+      )}
 
-      <main id="main" ref={mainRef} tabIndex={-1} className="mx-auto w-full max-w-5xl flex-1 px-4 py-6 outline-none sm:py-8">
+      <main id="main" ref={mainRef} tabIndex={-1} className={`mx-auto w-full max-w-5xl flex-1 px-[18px] py-6 outline-none sm:px-6 sm:py-8 ${inResults ? "pb-28 md:pb-8" : ""}`}>
         {route.view === "home" && <Home loading={loading} initialAddress={address} onLookup={lookup} />}
 
         {route.view === "shared" && <SharedPlanView plan={decodePlan(route.shared ?? "")} onLookup={startOver} />}
+
+        {route.view === "report" && <ReportPage />}
 
         {inResults && (
           <div className="space-y-6">
@@ -189,14 +230,16 @@ export function App() {
               {loading && <LoadingState />}
             </div>
 
-            {!loading && error === "no_election_data" && <EmptyState />}
-            {!loading && error && error !== "no_election_data" && (
+            {route.view === "reps" && address && <RepresentativesView address={address} />}
+
+            {route.view !== "reps" && !loading && error === "no_election_data" && <EmptyState />}
+            {route.view !== "reps" && !loading && error && error !== "no_election_data" && (
               <ErrorNotice code={error} onRetry={() => lookup(address, electionId)} />
             )}
 
-            {!loading && info && (
+            {route.view !== "reps" && !loading && info && (
               <>
-                <ElectionHeader info={info} />
+                <ElectionHeader info={info} aside={route.view === "plan" && !info.isEmpty ? <PlanChecklist info={info} /> : undefined} />
                 <ElectionPicker
                   key={info.election.id}
                   current={info.election}
@@ -208,9 +251,26 @@ export function App() {
                   <EmptyState offices={info.offices} />
                 ) : (
                   <>
-                    {route.view === "plan" && <VotingPlan info={info} />}
+                    {route.view === "plan" && (
+                      <VotingPlan info={info} address={address} reminders={features?.reminders ?? { email: false, sms: false }} />
+                    )}
                     {route.view === "ballot" && (
-                      <SampleBallot info={info} choices={choices} onToggle={toggle} onClear={clear} onClearAll={clearAll} />
+                      <SampleBallot
+                        info={info}
+                        choices={choices}
+                        onToggle={toggle}
+                        onClear={clear}
+                        onClearAll={clearAll}
+                        summary={{ enabled: !!features?.summaries, address, electionId: info.election.id }}
+                      />
+                    )}
+                    {route.view === "candidate" && (
+                      <CandidatePage
+                        contest={info.contests.find((c) => c.id === route.contestId)}
+                        index={route.index ?? 0}
+                        selected={choices[route.contestId ?? ""] ?? []}
+                        onToggle={toggle}
+                      />
                     )}
                     {route.view === "sheet" && <CheatSheet info={info} choices={choices} />}
                   </>
@@ -221,13 +281,13 @@ export function App() {
         )}
       </main>
 
-      <footer className="no-print border-t border-slate-200 bg-white py-6 text-sm dark:border-slate-800 dark:bg-slate-900">
-        <div className="mx-auto max-w-5xl space-y-1 px-4">
-          <p className="font-medium">{t("footer.nonpartisan")}</p>
+      <footer className={`no-print py-8 text-center text-[13px] ${inResults ? "pb-28 md:pb-8" : ""}`}>
+        <div className="mx-auto max-w-3xl space-y-1 px-4">
+          <p className="font-medium text-slate-700 dark:text-slate-300">{t("footer.nonpartisan")}</p>
           <p className="muted">{t("footer.privacy")}</p>
           <p className="muted">{t("footer.data")}</p>
           <p>
-            <a className="link" href={REPORT_URL} target="_blank" rel="noopener noreferrer">
+            <a className="link" href="#/report">
               {t("footer.report")}
             </a>
           </p>
@@ -237,13 +297,17 @@ export function App() {
   );
 }
 
+function needsInfo(v: View) {
+  return v === "plan" || v === "ballot" || v === "sheet" || v === "reps" || v === "candidate";
+}
+
 function LoadingState() {
   const { t } = useI18n();
   return (
     <div className="space-y-4" role="status">
       <p className="font-medium">{t("status.loading")}</p>
-      <div className="h-32 animate-pulse rounded-2xl bg-slate-200 dark:bg-slate-800" />
-      <div className="h-48 animate-pulse rounded-2xl bg-slate-200 dark:bg-slate-800" />
+      <div className="h-32 animate-pulse rounded-[32px] bg-white/40 dark:bg-white/5" />
+      <div className="h-48 animate-pulse rounded-[32px] bg-white/40 dark:bg-white/5" />
     </div>
   );
 }
@@ -270,35 +334,37 @@ function Home({
   const upcoming = elections?.filter((e) => e.day >= today);
 
   return (
-    <div className="space-y-8">
-      <section className="pt-2 sm:pt-6">
-        <h1 className="text-3xl font-extrabold tracking-tight sm:text-5xl">{t("home.heading")}</h1>
-        <p className="mt-3 max-w-2xl text-lg text-slate-700 dark:text-slate-300">{t("home.lead")}</p>
+    <div className="space-y-10">
+      <section className="mx-auto max-w-3xl pt-10 text-center sm:pt-24">
+        <h1 className="text-[38px] font-bold leading-[1.04] tracking-[-0.045em] text-[#0b1220] [text-wrap:balance] sm:text-[68px] sm:leading-[1.02] dark:text-white">
+          {t("home.heading")}
+        </h1>
+        <p className="mx-auto mt-5 max-w-[640px] text-[17px] text-slate-700 sm:text-[19px] dark:text-slate-300">{t("home.lead")}</p>
       </section>
 
-      <section className="card">
+      <section className="mx-auto max-w-3xl">
         <AddressForm initialValue={initialAddress} loading={loading} onSubmit={(a) => onLookup(a)} />
-        <p className="muted mt-3 text-sm">
+        <p className="muted mt-3 pl-[22px] text-[13px]">
           <span aria-hidden="true">🔒 </span>
           {t("home.privacy")}
         </p>
       </section>
 
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-4 md:grid-cols-2">
         <section className="card" aria-labelledby="upcoming-title">
           <h2 id="upcoming-title" className="h3">
             {t("home.upcoming")}
           </h2>
           {upcoming === undefined ? (
-            <div className="mt-2 h-10 animate-pulse rounded bg-slate-200 dark:bg-slate-800" />
+            <div className="mt-3 h-14 animate-pulse rounded-[20px] bg-white/40 dark:bg-white/5" />
           ) : upcoming.length === 0 ? (
             <p className="muted mt-2">{t("home.noUpcoming")}</p>
           ) : (
-            <ul className="mt-2 space-y-1">
+            <ul className="mt-3 space-y-2">
               {upcoming.map((e) => (
-                <li key={e.id}>
-                  <span className="font-medium">{e.name}</span>
-                  <span className="muted"> — {formatDay(e.day, lang, "medium")}</span>
+                <li key={e.id} className="card-inset flex flex-wrap items-center justify-between gap-x-4 gap-y-1 py-3">
+                  <span className="font-semibold">{e.name}</span>
+                  <span className="muted text-sm">{formatDay(e.day, lang, "medium")}</span>
                 </li>
               ))}
             </ul>

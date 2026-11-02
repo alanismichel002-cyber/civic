@@ -1,4 +1,4 @@
-import { lazy, Suspense, useMemo, useState } from "react";
+import { lazy, Suspense, useMemo, useState, type ReactNode } from "react";
 import type { VoterInfo } from "../../shared/types.ts";
 import { addressOneLine, daysUntil, formatDay, softCase } from "../lib/format.ts";
 import { buildIcs, downloadFile, type CalendarEvent } from "../lib/ics.ts";
@@ -8,10 +8,12 @@ import { planFromVoterInfo, shareUrl } from "../lib/share.ts";
 import { LocationList } from "./LocationList.tsx";
 import { OfficePanel } from "./OfficePanel.tsx";
 import { SourceBadges } from "./SourceBadge.tsx";
+import { RemindersCard } from "./RemindersCard.tsx";
+import { track } from "../lib/analytics.ts";
 
 const LocationMap = lazy(() => import("./LocationMap.tsx"));
 
-export function ElectionHeader({ info }: { info: VoterInfo }) {
+export function ElectionHeader({ info, aside }: { info: VoterInfo; aside?: ReactNode }) {
   const { t, lang } = useI18n();
   const days = daysUntil(info.election.day);
   const area = [softCase(info.normalizedArea.city), info.normalizedArea.state].filter(Boolean).join(", ");
@@ -22,17 +24,52 @@ export function ElectionHeader({ info }: { info: VoterInfo }) {
     else if (days === 1) countdown = t("plan.tomorrow");
     else countdown = t("plan.daysLeft", { n: days });
   }
+  const hero = (
+    <div className="rounded-3xl border border-white/40 bg-[linear-gradient(155deg,rgba(74,123,255,.88),rgba(30,64,175,.92))] p-6 text-white shadow-[inset_0_1px_0_rgba(255,255,255,.5),0_24px_50px_rgba(30,64,175,.3)] backdrop-blur-[32px] sm:rounded-[32px] sm:p-8 print:border-slate-400 print:bg-none print:text-black print:shadow-none">
+      <p className="eyebrow text-[#dbe6fe] print:text-black">{info.election.name}</p>
+      <p className="mt-2 text-2xl font-bold tracking-[-0.035em] sm:text-[40px] sm:leading-tight">{formatDay(info.election.day, lang)}</p>
+      {countdown && <p className="mt-1 text-[19px] font-medium">{countdown}</p>}
+      {area && <p className="mt-3 text-sm text-[#dbe6fe] print:text-black">{t("plan.area", { area })}</p>}
+    </div>
+  );
+  if (!aside) return hero;
   return (
-    <div className="card bg-brand-700 text-white dark:bg-slate-900">
-      <p className="text-sm font-medium uppercase tracking-wide text-brand-100 dark:text-sky-300">{info.election.name}</p>
-      <p className="mt-1 text-2xl font-bold sm:text-3xl">{formatDay(info.election.day, lang)}</p>
-      {countdown && <p className="mt-1 text-lg font-medium">{countdown}</p>}
-      {area && <p className="mt-2 text-sm text-brand-100 dark:text-slate-300">{t("plan.area", { area })}</p>}
+    <div className="grid gap-[18px] md:grid-cols-[1.4fr_1fr]">
+      {hero}
+      {aside}
     </div>
   );
 }
 
-export function VotingPlan({ info }: { info: VoterInfo }) {
+/** "Before you vote" checklist, shown beside the election hero. */
+export function PlanChecklist({ info }: { info: VoterInfo }) {
+  const { t } = useI18n();
+  const registrationCheck = officeLink(info.offices, "registrationCheck");
+  const rules = officeLink(info.offices, "rules") ?? officeLink(info.offices, "info");
+  return (
+    <section className="card" aria-labelledby="checklist-title">
+      <h3 id="checklist-title" className="h3">
+        {t("plan.checklist.title")}
+      </h3>
+      <ul className="mt-3 space-y-2">
+        <ChecklistItem label={t("plan.checklist.registration")} href={registrationCheck} />
+        <ChecklistItem label={t("plan.checklist.where")} href="#polling-title" internal />
+        <ChecklistItem label={t("plan.checklist.ballot")} href="#/ballot" internal />
+        <ChecklistItem label={t("plan.checklist.id")} href={rules} />
+      </ul>
+    </section>
+  );
+}
+
+export function VotingPlan({
+  info,
+  address = "",
+  reminders = { email: false, sms: false },
+}: {
+  info: VoterInfo;
+  address?: string;
+  reminders?: { email: boolean; sms: boolean };
+}) {
   const { t } = useI18n();
   const mapLocations = useMemo(
     () => [
@@ -44,17 +81,14 @@ export function VotingPlan({ info }: { info: VoterInfo }) {
   );
   const hasEarly = info.earlyVoteSites.length > 0;
   const hasDrop = info.dropOffLocations.length > 0;
-  const registrationCheck = officeLink(info.offices, "registrationCheck");
-  const rules = officeLink(info.offices, "rules") ?? officeLink(info.offices, "info");
-
   return (
-    <div className="space-y-6">
+    <div className="space-y-[18px]">
       <h2 className="sr-only">{t("plan.heading")}</h2>
 
       {info.mailOnly && (
-        <section className="card border-amber-400 bg-amber-50 dark:border-amber-700 dark:bg-amber-950" aria-labelledby="mail-only">
-          <h3 id="mail-only" className="h3">
-            <span aria-hidden="true">✉ </span>
+        <section className="card bg-amber-50/70 dark:bg-amber-950/40" aria-labelledby="mail-only">
+          <h3 id="mail-only" className="h3 flex items-center gap-2">
+            <span aria-hidden="true" className="dot bg-[#b45309]" />
             {t("plan.mailOnly.title")}
           </h3>
           <p className="mt-1">{t("plan.mailOnly.body")}</p>
@@ -62,17 +96,20 @@ export function VotingPlan({ info }: { info: VoterInfo }) {
       )}
 
       {mapLocations.some((l) => l.lat !== undefined) && (
-        <div className="no-print">
-          <Suspense fallback={<div className="h-64 animate-pulse rounded-xl bg-slate-200 sm:h-80 dark:bg-slate-800" />}>
+        <div className="card no-print p-2.5 sm:p-2.5">
+          <Suspense fallback={<div className="h-64 animate-pulse rounded-3xl bg-white/40 sm:h-80" />}>
             <LocationMap locations={mapLocations} origin={info.origin} label={t("plan.map")} youLabel={t("plan.mapYou")} />
           </Suspense>
-          <MapLegend showEarly={hasEarly} showDrop={hasDrop} hasOrigin={!!info.origin} />
+          <div className="px-3 pb-1.5">
+            <MapLegend showEarly={hasEarly} showDrop={hasDrop} hasOrigin={!!info.origin} />
+          </div>
         </div>
       )}
 
       {!(info.mailOnly && info.pollingLocations.length === 0) && (
         <section className="card" aria-labelledby="polling-title">
-          <h3 id="polling-title" className="h2">
+          <h3 id="polling-title" className="h2 flex items-center gap-2">
+            <span aria-hidden="true" className="dot bg-[#1d4ed8]" />
             {t("plan.polling.title")}
           </h3>
           {info.pollingLocations.length === 0 ? (
@@ -88,8 +125,10 @@ export function VotingPlan({ info }: { info: VoterInfo }) {
         </section>
       )}
 
+      <div className="grid gap-[18px] lg:grid-cols-2">
       <section className="card" aria-labelledby="early-title">
-        <h3 id="early-title" className="h2">
+        <h3 id="early-title" className="h2 flex items-center gap-2">
+          <span aria-hidden="true" className="dot bg-[#047857]" />
           {t("plan.early.title")}
         </h3>
         {hasEarly ? (
@@ -105,7 +144,8 @@ export function VotingPlan({ info }: { info: VoterInfo }) {
       </section>
 
       <section className="card" aria-labelledby="dropoff-title">
-        <h3 id="dropoff-title" className="h2">
+        <h3 id="dropoff-title" className="h2 flex items-center gap-2">
+          <span aria-hidden="true" className="dot bg-[#b45309]" />
           {t("plan.dropoff.title")}
         </h3>
         {hasDrop ? (
@@ -119,23 +159,14 @@ export function VotingPlan({ info }: { info: VoterInfo }) {
           <p className="mt-2">{t("plan.dropoff.none")}</p>
         )}
       </section>
+      </div>
 
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-[18px] md:grid-cols-2">
         <CalendarCard info={info} />
         <ShareCard info={info} />
       </div>
 
-      <section className="card" aria-labelledby="checklist-title">
-        <h3 id="checklist-title" className="h2">
-          {t("plan.checklist.title")}
-        </h3>
-        <ul className="mt-3 space-y-2">
-          <ChecklistItem label={t("plan.checklist.registration")} href={registrationCheck} />
-          <ChecklistItem label={t("plan.checklist.where")} href="#polling-title" internal />
-          <ChecklistItem label={t("plan.checklist.ballot")} href="#/ballot" internal />
-          <ChecklistItem label={t("plan.checklist.id")} href={rules} />
-        </ul>
-      </section>
+      <RemindersCard info={info} address={address} channels={reminders} />
 
       <OfficePanel offices={info.offices} />
       <SourcesNote info={info} />
@@ -145,10 +176,8 @@ export function VotingPlan({ info }: { info: VoterInfo }) {
 
 function ChecklistItem({ label, href, internal }: { label: string; href?: string; internal?: boolean }) {
   return (
-    <li className="flex items-start gap-2">
-      <span aria-hidden="true" className="mt-0.5 text-brand-700 dark:text-sky-300">
-        ☐
-      </span>
+    <li className="card-inset flex items-center gap-3 py-3">
+      <span aria-hidden="true" className="h-[18px] w-[18px] shrink-0 rounded-[6px] border-[1.5px] border-brand-700 dark:border-sky-300" />
       {href ? (
         <a className="link" href={href} {...(internal ? {} : { target: "_blank", rel: "noopener noreferrer" })}>
           {label}
@@ -164,12 +193,12 @@ function MapLegend({ showEarly, showDrop, hasOrigin }: { showEarly: boolean; sho
   const { t } = useI18n();
   const item = (color: string, label: string) => (
     <li className="flex items-center gap-1.5">
-      <span aria-hidden="true" className="inline-block h-3 w-3 rounded-full" style={{ background: color }} />
+      <span aria-hidden="true" className="dot" style={{ background: color }} />
       {label}
     </li>
   );
   return (
-    <ul className="muted mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm" aria-hidden="true">
+    <ul className="muted mt-2 flex flex-wrap gap-x-4 gap-y-1 text-[13px]" aria-hidden="true">
       {hasOrigin && item("#111827", t("plan.mapYou"))}
       {item("#1d4ed8", t("plan.polling.title"))}
       {showEarly && item("#047857", t("plan.early.title"))}
@@ -219,8 +248,11 @@ function CalendarCard({ info }: { info: VoterInfo }) {
       </ul>
       <button
         type="button"
-        className="btn-secondary mt-3"
-        onClick={() => downloadFile(`voting-dates-${info.election.id}.ics`, buildIcs(events))}
+        className="btn-secondary btn-sm mt-3"
+        onClick={() => {
+          downloadFile(`voting-dates-${info.election.id}.ics`, buildIcs(events));
+          track("calendar_add");
+        }}
       >
         <span aria-hidden="true">📅</span> {t("cal.button")}
       </button>
@@ -239,6 +271,7 @@ function ShareCard({ info }: { info: VoterInfo }) {
     try {
       await navigator.clipboard.writeText(url);
       setCopied(true);
+      track("share", { method: "copy" });
       setTimeout(() => setCopied(false), 2500);
     } catch {
       window.prompt(t("share.copy"), url);
@@ -275,7 +308,7 @@ function ShareCard({ info }: { info: VoterInfo }) {
 export function SourcesNote({ info }: { info: VoterInfo }) {
   const { t } = useI18n();
   return (
-    <aside className="card text-sm" aria-labelledby="sources-title">
+    <aside className="px-2 text-[13px]" aria-labelledby="sources-title">
       <h3 id="sources-title" className="font-semibold">
         {t("sources.title")}
       </h3>

@@ -17,7 +17,7 @@ Product docs are in [`docs/`](docs/): the PRD and the API overview.
 | --- | --- |
 | Frontend | React 18 + TypeScript + Vite + Tailwind CSS |
 | Map | Leaflet + OpenStreetMap tiles (lazy-loaded) |
-| API proxy | **Netlify Edge Functions** (`netlify/edge-functions/`) |
+| API proxy | **Netlify Edge Functions** (`netlify/edge-functions/`) + Netlify Functions for the v1.2 features (`netlify/functions/`) |
 | Address autocomplete | Photon (OpenStreetMap), proxied through the edge function |
 | Distance sorting | U.S. Census geocoder, called server-side |
 | Tests | Vitest |
@@ -51,6 +51,24 @@ The address is sent in the POST body, not the URL. The shared logic lives in `sh
 4. Check it: open the site and click **"Try it with a test election"**.
 
 > The API key is **not** in this repository. In the Google Cloud Console, restrict it under **API restrictions** to *Google Civic Information API* only. Netlify edge IPs aren't fixed, so an IP restriction won't work.
+
+## Optional features (environment variables in Netlify)
+
+Everything below is optional. Each feature stays hidden until its keys are set (the app checks `/api/features`).
+
+| Feature | Variables | Notes |
+| --- | --- | --- |
+| AI measure summaries (FR-16) | `ANTHROPIC_API_KEY` | Claude writes a plain-language, clearly labeled summary of long measures in English or Spanish. Summaries are cached in Netlify Blobs. |
+| Email reminders (FR-17) | `REMINDER_SECRET` (any long random string), `RESEND_API_KEY`, `REMINDER_FROM_EMAIL` | Double opt-in plus a one-tap unsubscribe link. Stores only the contact, language, dates and polling place, never the home address. A scheduled function sends reminders daily. |
+| Text reminders (FR-17) | `REMINDER_SECRET`, `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_FROM_NUMBER` | U.S. numbers need Twilio A2P 10DLC registration before carriers deliver texts. |
+| State legislators in "Who Represents Me" (FR-18) | `OPENSTATES_API_KEY` (free at openstates.org) | Without it, the page shows Congress plus the state districts and a lookup link. |
+| Analytics | `VITE_PLAUSIBLE_DOMAIN` | Cookieless Plausible. Events never include addresses or choices. Also add `https://plausible.io` to `script-src` and `connect-src` in `netlify.toml`. |
+| Map tiles | `VITE_MAP_TILE_URL`, `VITE_MAP_ATTRIBUTION` | Swap OpenStreetMap for a production tile provider. |
+
+Other setup:
+- **Report a problem** uses Netlify Forms: in Netlify, open **Forms** and turn on form detection, then redeploy.
+- **Uptime**: `.github/workflows/uptime.yml` checks `/api/health` every 30 minutes, and GitHub emails you if it fails.
+- **Load test**: `node scripts/loadtest.mjs https://civic23.netlify.app 50 10`
 
 ## Run locally
 
@@ -98,4 +116,7 @@ tests/                   Vitest tests + fixtures from the real API (no key)
 
 ## Status
 
-**1.0** covers PRD requirements FR-1 to FR-15. Later work: FR-16 (AI summaries of measures), FR-17 (reminders) and FR-18 (Who Represents Me).
+- **1.0:** FR-1 to FR-15.
+- **1.1:** candidate detail pages, a report-a-problem form, a health check and uptime monitoring, the analytics hook, configurable map tiles, a load-test script, and an accessibility audit (axe, WCAG 2.2 AA: no violations).
+- **1.2:** FR-16 AI measure summaries, FR-17 email/text reminders, FR-18 Who Represents Me.
+- **Design:** liquid-glass restyle.

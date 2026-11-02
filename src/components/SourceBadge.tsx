@@ -13,8 +13,8 @@ export function SourceBadges({ sources, className = "" }: { sources: Source[]; c
           className={
             "inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium " +
             (s.official
-              ? "bg-emerald-50 text-emerald-900 ring-1 ring-emerald-300 dark:bg-emerald-950 dark:text-emerald-200 dark:ring-emerald-800"
-              : "bg-amber-50 text-amber-900 ring-1 ring-amber-300 dark:bg-amber-950 dark:text-amber-200 dark:ring-amber-800")
+              ? "bg-[rgba(4,120,87,.10)] text-[#065f46] dark:bg-emerald-400/15 dark:text-emerald-300"
+              : "bg-[rgba(180,83,9,.10)] text-[#92400e] dark:bg-amber-400/15 dark:text-amber-300")
           }
         >
           <span aria-hidden="true">{s.official ? "✓" : "!"}</span>

@@ -18,17 +18,18 @@ export function SharedPlanView({ plan, onLookup }: { plan: SharedPlan | undefine
   return (
     <div className="space-y-6">
       <h2 className="sr-only">{t("shared.heading")}</h2>
-      <div className="card border-amber-400 bg-amber-50 dark:border-amber-700 dark:bg-amber-950" role="note">
+      <div className="card" role="note">
+        <span aria-hidden="true" className="dot mr-2 bg-[#b45309]" />
         <p>{t("shared.warning")}</p>
         <button type="button" className="btn-primary mt-3" onClick={onLookup}>
           {t("shared.lookup")}
         </button>
       </div>
-      <div className="card bg-brand-700 text-white dark:bg-slate-900">
-        <p className="text-sm font-medium uppercase tracking-wide text-brand-100 dark:text-sky-300">{plan.el.name}</p>
+      <div className="rounded-3xl border border-white/40 bg-[linear-gradient(155deg,rgba(74,123,255,.88),rgba(30,64,175,.92))] p-6 text-white shadow-[inset_0_1px_0_rgba(255,255,255,.5),0_24px_50px_rgba(30,64,175,.3)] sm:rounded-[32px] sm:p-8">
+        <p className="eyebrow text-[#dbe6fe]">{plan.el.name}</p>
         <p className="mt-1 text-2xl font-bold sm:text-3xl">{formatDay(plan.el.day, lang)}</p>
         {days !== undefined && days > 1 && <p className="mt-1 text-lg">{t("plan.daysLeft", { n: days })}</p>}
-        {plan.area && <p className="mt-2 text-sm text-brand-100 dark:text-slate-300">{t("plan.area", { area: softCase(plan.area) })}</p>}
+        {plan.area && <p className="mt-3 text-sm text-[#dbe6fe]">{t("plan.area", { area: softCase(plan.area) })}</p>}
       </div>
       {plan.mo && (
         <section className="card">

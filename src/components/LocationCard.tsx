@@ -7,16 +7,9 @@ export function LocationCard({ loc, index, highlight = false }: { loc: VotingLoc
   const { t, lang } = useI18n();
   const dates = formatDateRange(loc.startDate, loc.endDate, lang);
   return (
-    <article
-      className={
-        "rounded-xl border p-4 " +
-        (highlight
-          ? "border-brand-600 bg-brand-50 dark:border-sky-400 dark:bg-slate-800"
-          : "border-slate-200 dark:border-slate-700")
-      }
-    >
+    <article className={`h-full ${highlight ? "card-selected" : "card-inset"}`}>
       <div className="flex items-start justify-between gap-3">
-        <h4 className="text-base font-semibold sm:text-lg">
+        <h4 className="text-[15px] font-semibold">
           {index !== undefined && (
             <span
               aria-hidden="true"
@@ -31,14 +24,14 @@ export function LocationCard({ loc, index, highlight = false }: { loc: VotingLoc
           <span className="muted shrink-0 text-sm font-medium">{t("loc.miles", { n: loc.distanceMiles })}</span>
         )}
       </div>
-      <address className="mt-1 not-italic">
+      <address className="mt-1 text-sm not-italic text-slate-700 dark:text-slate-300">
         {addressLines(loc.address).map((l) => (
           <span key={l} className="block">
             {l}
           </span>
         ))}
       </address>
-      <dl className="mt-2 space-y-1 text-sm">
+      <dl className="muted mt-2 space-y-1 text-[13px]">
         {dates && (
           <div>
             <dt className="inline font-semibold">{t("loc.dates")}: </dt>
@@ -67,7 +60,12 @@ export function LocationCard({ loc, index, highlight = false }: { loc: VotingLoc
         )}
       </dl>
       <div className="mt-3 flex flex-wrap items-center gap-3">
-        <a className="link text-sm" href={directionsUrl(loc.address, loc.lat, loc.lng)} target="_blank" rel="noopener noreferrer">
+        <a
+          className={`${highlight ? "btn-primary" : "btn-secondary"} btn-sm`}
+          href={directionsUrl(loc.address, loc.lat, loc.lng)}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {t("loc.directions")}
           <span className="sr-only"> ({softCase(loc.name)})</span>
         </a>

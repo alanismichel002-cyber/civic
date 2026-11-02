@@ -8,7 +8,8 @@ export function EmptyState({ offices = [] }: { offices?: ElectionOffice[] }) {
   return (
     <div className="space-y-4">
       <section className="card" aria-labelledby="empty-title">
-        <h2 id="empty-title" className="h2">
+        <h2 id="empty-title" className="h2 flex items-center gap-2">
+          <span aria-hidden="true" className="dot bg-[#b45309]" />
           {t("empty.title")}
         </h2>
         <p className="mt-2">{t("empty.body")}</p>

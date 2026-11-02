@@ -7,7 +7,7 @@
     -webkit-text-size-adjust: 100%;
   }
   body {
-    @apply bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+    @apply bg-[#eef1f8] text-[15px] leading-normal text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
   }
   :focus-visible {
     @apply outline outline-[3px] outline-offset-2 outline-brand-600 dark:outline-sky-300;
@@ -18,36 +18,109 @@
 }
 
 @layer components {
+  .glass {
+    @apply border border-white/75 bg-white/40 shadow-[inset_0_1px_0_#fff,0_20px_50px_rgba(30,40,110,.10)] backdrop-blur-[32px] backdrop-saturate-[1.8] dark:border-white/10 dark:bg-slate-900/50 dark:shadow-[inset_0_1px_0_rgba(255,255,255,.08)];
+  }
   .card {
-    @apply rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 dark:border-slate-800 dark:bg-slate-900;
+    @apply glass rounded-3xl p-5 sm:rounded-[32px] sm:p-7;
+  }
+  .card-inset {
+    @apply rounded-[20px] border border-white/85 bg-white/60 p-4 dark:border-white/10 dark:bg-white/5;
+  }
+  .card-selected {
+    @apply rounded-[22px] border border-white bg-white/75 p-4 shadow-[0_0_0_2px_rgba(29,78,216,.5),0_10px_30px_rgba(30,64,175,.12)] dark:border-sky-300/40 dark:bg-white/10;
+  }
+  .glass-bar {
+    @apply border border-white/65 bg-white/40 shadow-[inset_0_1px_0_rgba(255,255,255,.9),0_8px_30px_rgba(30,40,90,.08)] backdrop-blur-[28px] backdrop-saturate-[1.8] dark:border-white/10 dark:bg-slate-900/60 dark:shadow-none;
   }
   .btn {
-    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl px-4 py-2 text-base font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-60;
+    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full px-5 py-2 text-base font-semibold no-underline transition duration-150 ease-out disabled:cursor-not-allowed disabled:opacity-60;
   }
   .btn-primary {
-    @apply btn bg-brand-700 text-white hover:bg-brand-800 dark:bg-sky-300 dark:text-slate-950 dark:hover:bg-sky-200;
+    @apply btn bg-[linear-gradient(180deg,#4a7bff,#1e40af)] text-white shadow-[inset_0_1px_0_rgba(255,255,255,.45),0_6px_18px_rgba(30,64,175,.35)] hover:brightness-110 active:brightness-95;
   }
   .btn-secondary {
-    @apply btn border border-slate-300 bg-white text-slate-900 hover:bg-slate-100 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800;
+    @apply btn border border-white bg-white/80 text-brand-700 shadow-[0_4px_14px_rgba(30,40,110,.08)] hover:bg-white dark:border-white/10 dark:bg-white/10 dark:text-sky-300 dark:hover:bg-white/15;
   }
   .btn-ghost {
-    @apply btn text-brand-700 hover:bg-brand-50 dark:text-sky-300 dark:hover:bg-slate-800;
+    @apply btn text-brand-700 hover:bg-white/60 dark:text-sky-300 dark:hover:bg-white/10;
+  }
+  .btn-sm {
+    @apply min-h-[36px] px-4 text-sm;
+  }
+  .chip {
+    @apply inline-flex min-h-[36px] items-center rounded-full border border-white/80 bg-white/50 px-3.5 py-2 text-[13px] font-medium no-underline transition hover:bg-white/80 dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10;
   }
   .link {
     @apply font-medium text-brand-700 underline hover:text-brand-800 dark:text-sky-300 dark:hover:text-sky-200;
   }
   .h2 {
-    @apply text-xl font-bold tracking-tight sm:text-2xl;
+    @apply text-xl font-bold tracking-[-0.025em] text-[#0b1220] sm:text-2xl dark:text-white;
   }
   .h3 {
-    @apply text-lg font-semibold;
+    @apply text-[17px] font-semibold;
+  }
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.06em];
   }
   .muted {
     @apply text-slate-600 dark:text-slate-400;
   }
   .input {
-    @apply min-h-[48px] w-full rounded-xl border border-slate-400 bg-white px-4 py-3 text-base text-slate-900 placeholder:text-slate-500 dark:border-slate-500 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-400;
+    @apply min-h-[48px] w-full rounded-full border border-white/85 bg-white/55 px-5 py-3 text-base text-slate-900 shadow-[inset_0_1px_0_#fff] backdrop-blur-[30px] placeholder:text-slate-500 dark:border-white/10 dark:bg-white/5 dark:text-slate-100 dark:placeholder:text-slate-400 dark:shadow-none;
   }
+  textarea.input,
+  select.input {
+    @apply rounded-[20px];
+  }
+  .seg-track {
+    @apply flex gap-1 rounded-full bg-slate-900/[.06] p-1 dark:bg-white/10;
+  }
+  .seg-item {
+    @apply inline-flex min-h-[40px] items-center justify-center whitespace-nowrap rounded-full px-[18px] py-2 text-sm font-medium text-slate-700 no-underline transition hover:bg-white/60 dark:text-slate-300 dark:hover:bg-white/10;
+  }
+  .seg-item[aria-current="page"],
+  .seg-item[data-active="true"] {
+    @apply bg-white/90 font-semibold text-brand-700 shadow-[0_2px_8px_rgba(30,40,90,.12)] dark:bg-white/20 dark:text-white;
+  }
+  .dot {
+    @apply inline-block h-2.5 w-2.5 shrink-0 rounded-full;
+  }
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass,
+  .card,
+  .glass-bar {
+    background: rgba(255, 255, 255, 0.88);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .glass,
+  .card,
+  .glass-bar,
+  .input {
+    background: rgba(255, 255, 255, 0.92) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+  .bg-blobs {
+    display: none;
+  }
+}
+
+.bg-blobs > span {
+  position: absolute;
+  border-radius: 9999px;
+}
+.blob-a { width: 700px; height: 700px; left: -200px; top: -200px; background: oklch(0.72 0.15 260); filter: blur(96px); opacity: 0.8; }
+.blob-b { width: 540px; height: 540px; right: -160px; top: 400px; background: oklch(0.82 0.11 200); filter: blur(96px); opacity: 0.75; }
+.blob-c { width: 600px; height: 600px; left: 50%; bottom: -280px; margin-left: -300px; background: oklch(0.84 0.1 40); filter: blur(106px); opacity: 0.7; }
+@media (prefers-color-scheme: dark) {
+  .blob-a { background: oklch(0.45 0.15 260); opacity: 0.35; }
+  .blob-b { background: oklch(0.45 0.11 200); opacity: 0.35; }
+  .blob-c { background: oklch(0.45 0.1 40); opacity: 0.35; }
 }
 
 /* Leaflet controls in dark mode */
@@ -58,6 +131,9 @@
 }
 
 @media print {
+  .bg-blobs {
+    display: none !important;
+  }
   .no-print {
     display: none !important;
   }
@@ -66,6 +142,8 @@
     color: black !important;
   }
   .card {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
     box-shadow: none !important;
     border-color: #999 !important;
     background: white !important;

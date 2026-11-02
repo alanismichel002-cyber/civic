@@ -1,0 +1,17 @@
+# Pings the live site's health check every 30 minutes. If it fails, GitHub emails the repo owner.
+name: Uptime check
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check /api/health
+        run: |
+          code=$(curl -s -o body.json -w "%{http_code}" --max-time 20 "${SITE_URL:-https://civic23.netlify.app}/api/health")
+          cat body.json; echo
+          test "$code" = "200"
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}

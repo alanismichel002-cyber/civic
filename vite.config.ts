@@ -3,8 +3,8 @@ import react from "@vitejs/plugin-react";
 import { apiMiddleware } from "./dev/apiMiddleware.ts";
 
 export default defineConfig(({ mode }) => {
-  // Loads GOOGLE_CIVIC_API_KEY from .env for the dev API only. It is not
-  // prefixed with VITE_, so it is never bundled into client code.
+  // Loads server keys from .env for the dev API only. They are not prefixed
+  // with VITE_, so they are never bundled into client code.
   const env = loadEnv(mode, process.cwd(), "");
   return {
     plugins: [
@@ -12,10 +12,10 @@ export default defineConfig(({ mode }) => {
       {
         name: "civic-dev-api",
         configureServer(server) {
-          server.middlewares.use(apiMiddleware(() => env.GOOGLE_CIVIC_API_KEY));
+          server.middlewares.use(apiMiddleware(() => env));
         },
         configurePreviewServer(server) {
-          server.middlewares.use(apiMiddleware(() => env.GOOGLE_CIVIC_API_KEY));
+          server.middlewares.use(apiMiddleware(() => env));
         },
       },
     ],

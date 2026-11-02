@@ -172,7 +172,10 @@ export type ApiErrorCode =
   | "no_election_data"
   | "rate_limited"
   | "not_configured"
-  | "upstream_error";
+  | "upstream_error"
+  | "not_found"
+  | "feature_disabled"
+  | "summary_unavailable";
 
 export interface ApiError {
   error: { code: ApiErrorCode; message: string };

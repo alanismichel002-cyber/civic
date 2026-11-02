@@ -13,6 +13,12 @@ interface Props {
   youLabel: string;
 }
 
+// Swap map providers (e.g. MapTiler, Stadia, Mapbox raster tiles) without code changes.
+const TILE_URL = import.meta.env.VITE_MAP_TILE_URL || "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
+const TILE_ATTRIBUTION =
+  import.meta.env.VITE_MAP_ATTRIBUTION ||
+  '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
 const COLORS: Record<VotingLocation["kind"], string> = {
   polling: "#1d4ed8",
   early: "#047857",
@@ -40,13 +46,9 @@ export default function LocationMap({ locations, origin, label, youLabel }: Prop
 
   return (
     // The map is supplementary: every location is also listed in text below it.
-    <div role="img" aria-label={label} className="h-64 overflow-hidden rounded-xl border border-slate-200 sm:h-80 dark:border-slate-700">
+    <div role="group" aria-label={label} className="h-64 overflow-hidden rounded-3xl sm:h-80">
       <MapContainer center={points[0]} zoom={14} zoomAnimation={false} fadeAnimation={false} markerZoomAnimation={false} scrollWheelZoom={false} style={{ height: "100%", width: "100%" }} keyboard={false}>
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
-          maxZoom={19}
-        />
+        <TileLayer attribution={TILE_ATTRIBUTION} url={TILE_URL} maxZoom={19} />
         <FitBounds points={points} />
         {origin && (
           <CircleMarker center={[origin.lat, origin.lng]} radius={7} pathOptions={{ color: "#111827", fillColor: "#111827", fillOpacity: 1 }}>
